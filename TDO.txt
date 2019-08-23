@@ -44,6 +44,22 @@ PRO::
 . form validation
 . articles json
 
+///
+
+. sync forms !!! create js . single json reading function !!! optimization . fix breakpoints, make 3, remove asideRight on point 2.
+
+. add less ? . split all style files structure, etc.. . after less, fix buttons, use inheritance for less
+
+. fix qtlightbox reforce compatibility . fix-remove nav +colors? id->class (alerts, buttons, lightbox, all styles !!!)
+
+. fix full dynamic: logo, mobMenu, Search, | forms, manu !!! ??
+
+// ===
+
+. fix mobile (and desktop! header) cover background image !!! ? (ONLINE)(MOB) . add elements (PRO) to asides !!!
+
+. json must contain: .. asideLeftEnabled: true/false .. asideLeftWidth: .. headerEnabled: .. headerHeight: .. colors (all runtime!)
+
 === V === DONE ===
 
 . fix mobile (and desktop! header) cover background image !!! ? (ONLINE)(MOB)
