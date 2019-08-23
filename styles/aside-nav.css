@@ -1,0 +1,119 @@
+/*
+ * <codeheader>
+ * <name>ChinaTown Front</name>
+ * <version>6.1</version>
+ * <description>ChinaTown Front</description>
+ * <base>https://ampae.com/chinatown/</base>
+ * <author>V Bugroff</author>
+ * <email>bugroff@protonmail.com</email>
+ * <author>M Karodine</author>
+ * <email>usr04@protonmail.com</email>
+ * <copyright file="LICENSE.txt" company="AMPAE">
+ * THIS CODE ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR
+ * A PARTICULAR PURPOSE.
+ * </copyright>
+ * <date>2019-01-01</date>
+ * <summary>
+ * CSS Script File
+ * </summary>
+ * </codeheader>
+*/
+.nano {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 100;
+}
+.nano ul {
+  margin: 0;
+  padding: 0;
+}
+.nano ul ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.nano ul ul li {
+  background: ;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.nano ul ul li a {
+  font-size: 14px;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: ;
+}
+.nano ul li {
+  list-style-type: none;
+}
+.nano ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: ;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0 5px 25px;
+  outline: 0;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.nano ul li a:hover {
+  color: ;
+}
+.nano ul li a strong {
+  color: ;
+  margin-left: 5px;
+}
+.nano ul li a span {
+  display: inline-block;
+}
+.nano ul li a i {
+  width: 20px;
+}
+.nano ul li a i .fa-angle-left {
+  padding-top: 3px;
+}
+.nano ul li a i .fa-angle-right {
+  padding-top: 3px;
+}
+.nano ul li.active >a {
+  color: ;
+}
+.nano ul li.active ul {
+  display: block;
+}
+
+/*
+COLORS
+*/
+
+.nano ul ul li {
+  background: #ccc;
+}
+.nano ul ul li a {
+  color: #000;
+}
+.nano ul li a {
+  color: #000;
+}
+.nano ul li a:hover {
+  color: #f90;
+}
+.nano ul li a strong {
+  color: #333;
+}
+.nano ul .active >a {
+  color: #f90;
+}

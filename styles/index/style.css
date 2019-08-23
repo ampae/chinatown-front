@@ -1,0 +1,366 @@
+/*
+ * <codeheader>
+ * <name>ChinaTown Front</name>
+ * <version>6.1</version>
+ * <description>ChinaTown Front</description>
+ * <base>https://ampae.com/chinatown/</base>
+ * <author>V Bugroff</author>
+ * <email>bugroff@protonmail.com</email>
+ * <author>M Karodine</author>
+ * <email>usr04@protonmail.com</email>
+ * <copyright file="LICENSE.txt" company="AMPAE">
+ * THIS CODE ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR
+ * A PARTICULAR PURPOSE.
+ * </copyright>
+ * <date>2019-01-01</date>
+ * <summary>
+ * CSS Script File
+ * </summary>
+ * </codeheader>
+*/
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.topnav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	z-index: 9999;
+	transition: 0.6s ease;
+	display: flex;
+	padding: 3px 0 0 0;
+	justify-content: space-between;
+}
+
+.navBarSmall {
+	height: 40px;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+.navBarBig {
+	height: 80px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.branding img {
+	/*
+	position: absolute;
+	top:0
+	left:0;
+*/
+	transition: 0.6s ease;
+	width: 64px;
+	padding: 6px;
+}
+
+
+/*
+@media only screen and (min-width: 767px) {
+	.branding img{
+	  width: 30px;
+	}
+}
+*/
+
+.cozy {
+	/*
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  }
+  */
+	display: flex;
+	flex-direction: column;
+	height: 350px;
+}
+
+.bill {
+	height: 200px;
+	min-height: 200px;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.overlay {
+	background: rgba(0, 0, 0, 0) url('../../img/pattern.png') repeat top left fixed;
+	height: 100vh;
+}
+
+.player {
+	/*
+  position: relative;
+	*/
+	margin-top: -40px;
+	background: url('../../img/bg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.inline-YTPlayer {
+	min-height: 200px !important;
+	max-height: 200px !important;
+	width: 100%;
+	height: 100%;
+	max-width: 100% !important;
+}
+
+.hbox {
+	width: 60%;
+	margin: 30px auto;
+	padding: 30px;
+}
+
+.hbox img {
+	width: 20%;
+}
+
+.cta-home {
+	height: 100%;
+	/*
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	*/
+}
+
+.cta-home .callout {
+	padding: 40px 0 0 0;
+}
+
+@media screen and (min-width: 800px) {
+	/*
+  .player {
+		min-height: auto;
+		height: auto;
+	}
+*/
+	.cozy {
+		height: 550px;
+	}
+	.bill {
+		height: 400px;
+		min-height: 400px;
+		max-height: 400px;
+	}
+}
+
+.main {
+	position: absolute;
+	top: 350px;
+	left: 0;
+	right: 0;
+	transition: .5s;
+	overflow-x: hidden;
+	z-index: 999;
+}
+
+.asideLeft {
+	position: absolute;
+	top: 550px;
+	left: 0;
+	height: auto;
+	min-height: 100%;
+	width: 260px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	visibility: hidden;
+}
+
+.asideRight {
+	position: absolute;
+	top: 550px;
+	height: auto;
+	min-height: 100%;
+	right: 0;
+	width: 400px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	visibility: hidden;
+}
+
+.absRight {
+	position: absolute;
+	width: 400px;
+}
+
+.absLeft {
+	position: absolute;
+	width: 260px;
+}
+
+.stickyRight {
+	position: fixed;
+	right: 0;
+	top: 40px;
+}
+
+.stickyLeft {
+	position: fixed;
+	left: 0;
+	top: 40px;
+}
+
+.asideFooter {
+	display: none;
+	height: auto;
+	z-index: -9999;
+}
+
+@media screen and (min-width: 800px) {
+	.main {
+		top: 550px;
+		left: 260px;
+		right: 400px;
+	}
+	.asideLeft {
+		visibility: visible;
+	}
+	.asideRight {
+		visibility: visible;
+	}
+}
+
+section[role="search"] {
+	width: 210px;
+}
+
+section[role="search"] input[type=text] {
+	margin: 0;
+	padding: 6px 2px;
+	border: none;
+	font-size: 17px;
+	width: 160px;
+	max-width: 160px;
+	box-sizing: border-box;
+}
+
+section[role="search"] button {
+	margin: 0;
+	padding: 6px 10px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	max-width: 40px;
+	box-sizing: border-box;
+}
+
+
+/*
+@media only screen and (min-width: 767px) {
+	section[role="search"] input[type=text] {
+	}
+	header .headerLogo {
+
+	}
+	.headerSearch {
+	}
+}
+*/
+
+.topuser {
+	width: 40px;
+}
+
+.notifications {
+	width: 40px;
+}
+
+.icon-wrapper-white {
+	color: #fff;
+	position: relative;
+}
+
+.icon-wrapper-white i {
+	font-size: 24px;
+	margin-top: 4px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.icon-wrapper-white .badge {
+	color: #fff;
+	background: rgba(255, 0, 0, 0.9);
+	width: auto;
+	height: auto;
+	margin: 0;
+	border-radius: 25%;
+	position: absolute;
+	font-size: 9px;
+	font-weight: bold;
+	top: 0;
+	left: 12px;
+	padding: 3px;
+}
+
+.dropbtn {
+	background: inherit;
+	border: none;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd
+}
+
+#chkMenu {
+	visibility: hidden;
+}
+
+.mobmenu-toggle {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 32px;
+	text-align: center;
+	text-decoration: none;
+	width: 40px;
+}
+
+.headerMobMenu {
+	width: 40px;
+}
+
+@media only screen and (min-width: 767px) {
+	.mobmenu-toggle {
+		visibility: hidden;
+	}
+	.headerMobMenu {
+		width: 0;
+	}
+}

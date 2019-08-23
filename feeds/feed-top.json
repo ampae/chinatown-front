@@ -1,0 +1,18 @@
+[
+   {
+      "value":"Sign In",
+      "link":"signin.html"
+   },
+   {
+     "value":"My Account",
+     "link":"dashboard.html"
+   },
+   {
+     "value":"Sign Out",
+     "link":"index.html"
+   },
+   {
+     "value":"Settings",
+     "link":"dashboard.html"
+   }
+]

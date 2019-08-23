@@ -1,0 +1,257 @@
+/*
+ * <codeheader>
+ * <name>ChinaTown Front</name>
+ * <version>6.1</version>
+ * <description>ChinaTown Front</description>
+ * <base>https://ampae.com/chinatown/</base>
+ * <author>V Bugroff</author>
+ * <email>bugroff@protonmail.com</email>
+ * <author>M Karodine</author>
+ * <email>usr04@protonmail.com</email>
+ * <copyright file="LICENSE.txt" company="AMPAE">
+ * THIS CODE ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR
+ * A PARTICULAR PURPOSE.
+ * </copyright>
+ * <date>2019-01-01</date>
+ * <summary>
+ * CSS Script File
+ * </summary>
+ * </codeheader>
+*/
+input[type="submit"].btn{
+    cursor:pointer
+}
+input::-moz-focus-inner{
+    border:0;
+    padding:0
+}
+button {
+}
+button::-moz-focus-inner{
+    border:0;
+    padding:0
+}
+.btn{
+  font-family:Tahoma,Geneva,sans-serif;
+    margin-right:1em;
+    margin-bottom:1em;
+    display:inline-block;
+    outline:none;
+    *zoom:1;
+    text-align:center;
+    text-decoration:none;
+    font-weight:normal;
+    font-size:1em;
+    letter-spacing:1px;
+    vertical-align:middle;
+    border:1px solid;
+    transition:all .4s ease;
+    box-sizing:border-box;
+    cursor:pointer
+}
+.btn.disabled{
+    cursor:not-allowed;
+    opacity:.4
+}
+.btn i.icon-left{
+    padding:0 5px 0 0
+}
+.btn i.icon-right{
+    padding:0 0 0 5px
+}
+.btn-bold{
+    border:3px solid;
+    font-weight:bold
+}
+.btn-block{
+    display:block;
+    min-width:100%
+}
+.btn-small{
+    font-size:.75em;
+    padding:.4em .8em
+}
+.btn-medium{
+    font-size:1em;
+    padding:.5em 1em
+}
+.btn-large{
+    font-size:1.5em;
+    padding:.3em .6em;
+    font-family:Impact,Charcoal,sans-serif;
+    text-shadow:none
+}
+.btn-skew{
+    -webkit-transform:skewX(-15deg);
+    transform:skewX(-15deg)
+}
+.btn-radius{
+    border-radius:3px
+}
+.btn-radius-large{
+    border-radius:22px
+}
+a.btn{
+    outline:none;
+    *zoom:1;
+    text-align:center;
+    text-decoration:none
+}
+
+.btn{
+  text-shadow:0 1px 0 rgba(0,0,0,0.05)
+}
+
+.btn.active{
+    text-shadow:rgba(0,0,0,0.5) 0 -1px 0;
+    -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.5);
+    box-shadow:inset 0 1px 2px rgba(0,0,0,0.5)
+}
+.btn-shadow-dark{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.3),0 6px 20px 0 rgba(0,0,0,0.2)
+}
+.btn-shadow-light{
+    box-shadow:0 8px 16px 0 rgba(255,255,255,0.6),0 6px 20px 0 rgba(255,255,255,0.5)
+}
+.btn-solid-shadow-dark{
+    box-shadow:4px 5px rgba(0,0,0,0.9)
+}
+.btn-solid-shadow-light{
+    box-shadow:4px 5px rgba(255,255,255,0.9)
+}
+
+.btn-green{
+    color:#66BB6A;
+    border-color:#66BB6A
+}
+.btn-green:hover{
+    background:#66BB6A;
+    color:#FFFFFF;
+    border-color:#66BB6A
+}
+.btn-green-inverse{
+    background:#66BB6A;
+    color:#FFFFFF;
+    border-color:#66BB6A
+}
+.btn-green-inverse:hover{
+    color:#66BB6A;
+    border-color:#66BB6A;
+    background:transparent
+}
+.btn-blue{
+    color:#4682B4;
+    border-color:#4682B4
+}
+.btn-blue:hover{
+    background:#4682B4;
+    color:#FFFFFF;
+    border-color:#4682B4
+}
+.btn-blue-inverse{
+    background:#4682B4;
+    color:#FFFFFF;
+    border-color:#4682B4
+}
+.btn-blue-inverse:hover{
+    color:#4682B4;
+    border-color:#4682B4;
+    background:transparent
+}
+.btn-orange{
+    color:#FF8C00;
+    border-color:#FF8C00
+}
+.btn-orange:hover{
+    background:#FF8C00;
+    color:#FFFFFF;
+    border-color:#FF8C00
+}
+.btn-orange-inverse{
+    background:#FF8C00;
+    color:#FFFFFF;
+    border-color:#FF8C00
+}
+.btn-orange-inverse:hover{
+    color:#FF8C00;
+    border-color:#FF8C00;
+    background:transparent
+}
+.btn-red{
+    color:#E64A19;
+    border-color:#E64A19
+}
+.btn-red:hover{
+    background:#E64A19;
+    color:#FFFFFF;
+    border-color:#E64A19
+}
+.btn-red-inverse{
+    background:#E64A19;
+    color:#FFFFFF;
+    border-color:#E64A19
+}
+.btn-red-inverse:hover{
+    color:#E64A19;
+    border-color:#E64A19;
+    background:transparent
+}
+.btn-gray{
+    color:#78909c;
+    border-color:#78909c
+}
+.btn-gray:hover{
+    background:#78909c;
+    color:#FFFFFF;
+    border-color:#78909c
+}
+.btn-gray-inverse{
+    background:#78909c;
+    color:#FFFFFF;
+    border-color:#78909c
+}
+.btn-gray-inverse:hover{
+    color:#78909c;
+    border-color:#78909c;
+    background:transparent
+}
+.btn-black{
+    color:#000000;
+    border-color:#000000
+}
+.btn-black:hover{
+    background:#000000;
+    color:#FFFFFF;
+    border-color:#000000
+}
+.btn-black-inverse{
+    background:#000000;
+    color:#FFFFFF;
+    border-color:#000000
+}
+.btn-black-inverse:hover{
+    color:#000000;
+    border-color:#000000;
+    background:transparent
+}
+.btn-white{
+    color:#FFFFFF;
+    border-color:#FFFFFF
+}
+.btn-white:hover{
+    background:#FFFFFF;
+    color:#000000;
+    border-color:#FFFFFF
+}
+.btn-white-inverse{
+    background:#FFFFFF;
+    color:#000000;
+    border-color:#FFFFFF
+}
+.btn-white-inverse:hover{
+    color:#FFFFFF;
+    border-color:#FFFFFF;
+    background:transparent
+}

@@ -1,0 +1,325 @@
+/*
+ * <codeheader>
+ * <name>ChinaTown Front</name>
+ * <version>6.1</version>
+ * <description>ChinaTown Front</description>
+ * <base>https://ampae.com/chinatown/</base>
+ * <author>V Bugroff</author>
+ * <email>bugroff@protonmail.com</email>
+ * <author>M Karodine</author>
+ * <email>usr04@protonmail.com</email>
+ * <copyright file="LICENSE.txt" company="AMPAE">
+ * THIS CODE ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR
+ * A PARTICULAR PURPOSE.
+ * </copyright>
+ * <date>2019-01-01</date>
+ * <summary>
+ * CSS Script File
+ * </summary>
+ * </codeheader>
+*/
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+/*
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f90;
+  outline: 1px solid slategrey;
+}
+*/
+
+.topnav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	z-index: 9999;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+	display: flex;
+	padding: 3px 0 0 0;
+	justify-content: space-between;
+}
+
+header .cozy {
+	display: none !important;
+}
+
+.branding {
+	width: 40px;
+}
+
+.branding img {
+	width: 100%;
+	max-width: 35px;
+	height: auto;
+}
+
+.headerSearch {
+	/*
+flex-basis: 210px;
+*/
+}
+
+section[role="search"] {
+	width: 210px;
+}
+
+section[role="search"] input[type=text] {
+	margin: 0;
+	padding: 6px 2px;
+	border: none;
+	font-size: 17px;
+	width: 160px;
+	max-width: 160px;
+	box-sizing: border-box;
+}
+
+section[role="search"] button {
+	margin: 0;
+	padding: 6px 10px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	max-width: 40px;
+	box-sizing: border-box;
+}
+
+
+/*
+@media only screen and (min-width: 767px) {
+	section[role="search"] input[type=text] {
+	}
+	header .branding {
+
+	}
+	.headerSearch {
+	}
+}
+*/
+
+.topuser {
+	width: 40px;
+}
+
+.notifications {
+	width: 40px;
+}
+
+.icon-wrapper-white {
+	color: #fff;
+	position: relative;
+}
+
+.icon-wrapper-white i {
+	font-size: 24px;
+	margin-top: 4px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.icon-wrapper-white .badge {
+	color: #fff;
+	background: rgba(255, 0, 0, 0.9);
+	width: auto;
+	height: auto;
+	margin: 0;
+	border-radius: 25%;
+	position: absolute;
+	font-size: 9px;
+	font-weight: bold;
+	top: 0;
+	left: 12px;
+	padding: 3px;
+}
+
+.dropbtn {
+	background: inherit;
+	border: none;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd
+}
+
+#chkMenu {
+	visibility: hidden;
+}
+
+.mobmenu-toggle {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 32px;
+	text-align: center;
+	text-decoration: none;
+	width: 40px;
+}
+
+.headerMobMenu {
+	width: 40px;
+}
+
+@media only screen and (min-width: 767px) {
+	.mobmenu-toggle {
+		visibility: hidden;
+	}
+	.headerMobMenu {
+		width: 0;
+	}
+}
+
+main {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	right: 0;
+	transition: .5s;
+	overflow-x: hidden;
+	z-index: 999;
+}
+
+.asideLeft {
+	position: fixed;
+	top: 40px;
+	left: 0;
+	bottom: 0;
+	width: 260px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.asideRight {
+	position: fixed;
+	top: 40px;
+	bottom: 0;
+	right: 0;
+	width: 400px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	visibility: hidden;
+}
+
+footer #colophon {
+	display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+	main {
+		left: 260px;
+		right: 400px;
+	}
+	.asideLeft {}
+	.asideRight {
+		visibility: visible;
+	}
+}
+
+input[type="file"],
+#co-post-img,
+#co-post-img-fn {
+	display: none;
+}
+
+.co-cursor {
+	cursor: pointer;
+}
+
+.well {
+	margin: 10px 0 5px 0;
+	padding: 0 10px;
+}
+
+.well textarea {
+	border: none;
+	border-radius: 0;
+	overflow: auto;
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	height: 70px;
+	min-height: 70px;
+	max-height: 70px;
+	width: 100%;
+}
+
+.co-update-top {
+	margin: 0;
+}
+
+.co-update-bottom {
+	padding: 0;
+}
+
+.col-post {
+	padding: 0;
+	border-radius: 0;
+}
+
+.list-inline {
+	color: #aaa;
+	list-style: none;
+	padding: 0;
+}
+
+.list-inline>li {
+	display: inline;
+}
+
+.col-post {
+	display: flex;
+}
+
+.col-post-ava {}
+
+.col-post-text {
+	flex-grow: 1;
+}
+
+.col-post-hidden {
+	display: none;
+}
+
+.colFlexUp {
+	display: flex;
+	justify-content: space-around;
+}

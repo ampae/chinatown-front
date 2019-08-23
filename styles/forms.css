@@ -1,0 +1,60 @@
+/*
+ * <codeheader>
+ * <name>ChinaTown Front</name>
+ * <version>6.1</version>
+ * <description>ChinaTown Front</description>
+ * <base>https://ampae.com/chinatown/</base>
+ * <author>V Bugroff</author>
+ * <email>bugroff@protonmail.com</email>
+ * <author>M Karodine</author>
+ * <email>usr04@protonmail.com</email>
+ * <copyright file="LICENSE.txt" company="AMPAE">
+ * THIS CODE ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR
+ * A PARTICULAR PURPOSE.
+ * </copyright>
+ * <date>2019-01-01</date>
+ * <summary>
+ * CSS Script File
+ * </summary>
+ * </codeheader>
+*/
+fieldset {
+border:0;
+margin:0;
+padding:0;
+}
+
+legend {
+font-size:1.2em;
+border:0;
+border-bottom:1px solid #fff;
+margin-bottom:1em;
+text-align:center;
+padding:.5em;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,form select {
+-webkit-transition:all .3s ease-in-out;
+-moz-transition:all .3s ease-in-out;
+-ms-transition:all .3s ease-in-out;
+-o-transition:all .3s ease-in-out;
+outline:none;
+box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+width:100%;
+height:40px;
+margin:0 0 15px;
+padding:15px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,form select:focus {
+padding:15px 25px;
+}

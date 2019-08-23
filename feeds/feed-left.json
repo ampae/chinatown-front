@@ -1,0 +1,30 @@
+[
+   {
+      "value":"Sign In",
+      "icon":"fa-cogs",
+      "active":0,
+      "upper":0,
+      "link":"signin.html"
+   },
+   {
+     "value":"My Account",
+      "icon":"fa-cogs",
+      "active":0,
+      "upper":0,
+     "link":"dashboard.html"
+   },
+   {
+     "value":"Sign Out",
+      "icon":"fa-cogs",
+      "active":1,
+      "upper":0,
+     "link":"index.html"
+   },
+   {
+     "value":"Settings",
+      "icon":"fa-cogs",
+      "active":0,
+      "upper":0,
+     "link":"dashboard.html"
+   }
+]

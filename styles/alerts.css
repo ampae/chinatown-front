@@ -1,0 +1,69 @@
+/*
+ * <codeheader>
+ * <name>ChinaTown Front</name>
+ * <version>6.1</version>
+ * <description>ChinaTown Front</description>
+ * <base>https://ampae.com/chinatown/</base>
+ * <author>V Bugroff</author>
+ * <email>bugroff@protonmail.com</email>
+ * <author>M Karodine</author>
+ * <email>usr04@protonmail.com</email>
+ * <copyright file="LICENSE.txt" company="AMPAE">
+ * THIS CODE ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR
+ * A PARTICULAR PURPOSE.
+ * </copyright>
+ * <date>2019-01-01</date>
+ * <summary>
+ * CSS Script File
+ * </summary>
+ * </codeheader>
+*/
+
+
+.alert {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.alertClose {
+  margin-left: 15px;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert {
+  color: #444;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+}
+
+.alert-info {
+  color: #059;
+  background-color: #BEF;
+  border-color: #d6e9c6;
+}
+.alert-success {
+  color: #270;
+  background-color: #DFF2BF;
+  border-color: #d6e9c6;
+}
+.alert-warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+  border-color: #d6e9c6;
+}
+.alert-error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  border-color: #d6e9c6;
+}
+.alertClose {
+  color: #000;
+}
+.alertClose:hover {
+  color: #fff;
+}

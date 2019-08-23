@@ -1,0 +1,145 @@
+/*
+ * <codeheader>
+ * <name>ChinaTown Front</name>
+ * <version>6.1</version>
+ * <description>ChinaTown Front</description>
+ * <base>https://ampae.com/chinatown/</base>
+ * <author>V Bugroff</author>
+ * <email>bugroff@protonmail.com</email>
+ * <author>M Karodine</author>
+ * <email>usr04@protonmail.com</email>
+ * <copyright file="LICENSE.txt" company="AMPAE">
+ * THIS CODE ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR
+ * A PARTICULAR PURPOSE.
+ * </copyright>
+ * <date>2019-01-01</date>
+ * <summary>
+ * CSS Script File
+ * </summary>
+ * </codeheader>
+*/
+.qt_popup_overlay {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	margin-top: 0;
+	opacity: 0;
+	width: 100%;
+	z-index: 999999
+}
+
+.qt_popup {
+	position: fixed;
+	top: 10px;
+	right: 0;
+	left: 0;
+	display: none;
+	height: 90%;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 9999999
+}
+
+
+
+.qt_popup .qt-popup-close-button {
+	position: absolute;
+	top: 40px;
+	right: 20px;
+	right: 5px;
+	-moz-animation: qt-popup-fadein 4s;
+	-ms-animation: qt-popup-fadein 4s;
+	-o-animation: qt-popup-fadein 4s;
+	-webkit-animation: qt-popup-fadein 4s;
+	animation: qt-popup-fadein 4s;
+	cursor: pointer;
+	display: block;
+	padding: 0 3px 0 3px;
+	text-align: center;
+	text-decoration: none;
+	width: 1.4em;
+	z-index: 99999999
+}
+
+
+
+.qt_popup .qt_popup_header {
+	margin: 0;
+	padding: 8px 12px;
+	text-align: center
+}
+
+.qt_popup .qt_popup_body {
+	height: 90%;
+	margin: 0;
+	padding: 8px 12px;
+	text-align: center
+}
+
+.qt_popup .qt_popup_footer {
+	margin: 0;
+	padding: 8px 12px;
+	text-align: center
+}
+
+.qt_popup_content {
+	height: calc(100vh - 100px)
+}
+
+.qt_popup_content_right {
+	padding: 10px;
+	height: calc(100vh - 100px)
+}
+
+@media (min-width:760px) {
+	.qt_popup {
+		top: 0;
+		font-size: .8em
+	}
+}
+
+.qt-lightbox-iframe {
+	overflow: hidden;
+	padding-top: 56.25%;
+	position: relative
+}
+
+.qt-lightbox-iframe iframe {
+	border: 0;
+	height: 80%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+.qt_popup_overlay {
+	background: #000000;
+}
+
+.qt_popup .qt-popup-close-button {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.1em;
+
+	border: 2px solid #666666;
+	color: #666666;
+}
+.qt_popup .qt_popup_header {
+	color: #eeeeee;
+	font-size: 1em;
+	font-weight: bold;
+}
+.qt_popup .qt_popup_body {
+	background-color: transparent;
+}
+.qt_popup .qt_popup_footer {
+	color: #eeeeee;
+}
+.qt_popup_content_right {
+	background-color: #fff;
+}
