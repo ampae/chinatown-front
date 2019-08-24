@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>INFINITOOLS TMPL MAIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/style.css?v=2.0">
+    <link rel="stylesheet" href="styles/index/style.css?v=2.0">
+
+    <script type='text/javascript' src="scripts/onscroll.js?v=2.0"></script>
+    <script type='text/javascript' src="scripts/headerUser.js?v=2.0"></script>
+    <script type='text/javascript' src="libs/jquery.min.js"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.restop-note.js?v=2.0"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.restop.js?v=2.0"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.reshead.js?v=2.0"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.resleft.js?v=2.0"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.resright.js?v=2.0"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.resart.js?v=2.0"></script>
+
+
+</head>
+<body>
+    <header id="header" class="banner" role="banner" aria-label="header banner">
+        <section id="topnav" class="topnav">
+            <div id="branding" class="branding">
+                <a href="#">
+                    <img id="headerLogoImg" src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="LOGO" />
+                </a>
+            </div>
+
+<!--
+        <div class="headerMobMenu">
+            <label for="chkMenu" id="chkMenuLabel" class="mobmenu-toggle">&#9776;</label>
+            <input type="checkbox" id="chkMenu" onclick="showHideAsideLeft(this)" />
+        </div>
+-->
+
+<!--
+            <section id="headerSearch" class="headerSearch" role="search" aria-label="header search">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </section>
+-->
+
+            <div class="filler"></div>
+
+            <div id="notifications" class="notifications dropdown">
+            </div>
+
+            <div id="topuser" class="topuser dropdown">
+            </div>
+
+        </section>
+        <!-- .site-branding -->
+
+        <section id="cozy" class="cozy">
+        </section>
+
+    </header>
+
+    <main id="main" class="main content" role="main" aria-label="main">
+        <div class="container">
+            <div id="loader_image" class="cnt"><img src="img/loader.gif" alt="" width="24" height="24"> Loading...please wait</div>
+            <div id="results" data-results="12345"></div>
+            <div id="loader_message"></div>
+            <!-- Load More Btn -->
+        </div>
+    </main>
+
+    <aside id="asideLeft" class="asideLeft" role="complementary" aria-label="aside left">
+        <nav role="navigation" id="leftside-navigation" class="nano" aria-label="aside left navigation">
+        </nav>
+    </aside>
+
+    <aside id="asideRight" class="asideRight" role="complementary" aria-label="aside right">
+    </aside>
+
+    <footer id="colophon" class="asideFooter" role="contentinfo">
+        <div class="site-info">
+        </div>
+    </footer>
+
+    <!--
+    <script type='text/javascript' src="scripts/jquery.mb.YTPlayer.min.js"></script>
+    <script type='text/javascript' src="scripts/jquery.mb-player.js"></script>
+    -->
+</body>
+</html>
