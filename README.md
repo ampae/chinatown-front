@@ -2,7 +2,7 @@
 
 ChinaTown Front is a **Modern All-in-One LightWeight FrontEnd FrameWork**.
 
-[![Join the chat at https://gitter.im/ampae/chinatown-front](https://badges.gitter.im/ampae/chinatown-front.svg)](https://gitter.im/jgthms/bulma)
+[![Join the chat at https://gitter.im/ampae/chinatown-front](https://badges.gitter.im/ampae/chinatown-front.svg)](https://gitter.im/ampae/chinatown-front)
 [![Build Status](https://travis-ci.org/jgthms/bulma.svg?branch=master)](https://travis-ci.org/ampae/chinatown-front)
 
 <a href="https://ampae.com/"><img src="https://raw.githubusercontent.com/ampae/chinatown-front/master/docs/images/chinatown-banner.png" alt="ChinaTown Front: a modern FrontEnd framework" style="max-width:100%;" width="400" height="200"></a>
