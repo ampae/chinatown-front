@@ -7,8 +7,13 @@ ChinaTown Front is a **Modern All-in-One LightWeight FrontEnd FrameWork**.
 
 <a href="https://ampae.com/"><img src="https://raw.githubusercontent.com/ampae/chinatown-front/master/docs/images/chinatown-banner.png" alt="ChinaTown Front: a modern FrontEnd framework" style="max-width:100%;" width="400" height="200"></a>
 
+## DEMO
+
+https://ampae.com/chinatown-front
+
 ## Quick install
 
+Download From GitHub!
 ChinaTown Front is constantly in development! Try it out now:
 
 Feel free to raise an issue or submit a pull request.
