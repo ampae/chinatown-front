@@ -2,7 +2,6 @@
 
 ChinaTown Front is a **Modern All-in-One LightWeight FrontEnd FrameWork**.
 
-[![Awesome][awesome-badge]][awesome-link]
 [![Join the chat at https://gitter.im/ampae/chinatown-front](https://badges.gitter.im/ampae/chinatown-front.svg)](https://gitter.im/jgthms/bulma)
 [![Build Status](https://travis-ci.org/jgthms/bulma.svg?branch=master)](https://travis-ci.org/ampae/chinatown-front)
 
@@ -52,8 +51,8 @@ Browse the [online documentation here.](https://ampae.com/chinatown-front/docume
 
 | Project                                                                              | Description                                                                            |
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [ChinaTown - FullStack](https://github.com/ampae/chinatown)                          | Modern PSR complient PHP framework                                             |
+| [ChinaTown - Full Stack](https://github.com/ampae/chinatown)                         | Modern PSR complaint PHP Framework                                             |
 
 ## Copyright and license
 
-Code copyright 2019 Jeremy Thomas. Code released under [the MIT license](https://github.com/ampae/chinatown-front/blob/master/LICENSE).
+Code copyright 2019 AMPAE. Code released under [the MIT license](https://github.com/ampae/chinatown-front/blob/master/LICENSE).
