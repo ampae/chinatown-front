@@ -2,8 +2,6 @@
 
 both php+js libs for HTML5 generation!!!
 
-Tired from Bootstrap Look&Feel, try Chinatown-FrontEnd HTML5/CSS3 Lightweight FrameWork
-
 . create documentation !!!
 . fix lightbox !!!
 . fix js libs for json loading !!!
@@ -21,7 +19,6 @@ Tired from Bootstrap Look&Feel, try Chinatown-FrontEnd HTML5/CSS3 Lightweight Fr
 . FIN dyn load all but video
 
 . put all together, finalize !!! 30m
-move:: hg clone https://infinitools@bitbucket.org/ampae/bonsai-front
 
 . add location and picture preview !!!
 . add forms, settings !!!
