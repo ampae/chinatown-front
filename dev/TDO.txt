@@ -5,45 +5,24 @@ both php+js libs for HTML5 generation!!!
 Tired from Bootstrap Look&Feel, try Chinatown-FrontEnd HTML5/CSS3 Lightweight FrameWork
 
 . create documentation !!!
-. fix lightbox !!!
+. check lightbox !
 . fix js libs for json loading !!!
 
 . make a video with Atom on background to show code !
 
-. js forms, fix dashboard BUG!!!
-
 ++tag cloud for index Left!
 
 . split all files !! 30m
-. add lorem ipsum text !!! (ONLINE)
 . finally add less (compiller only!) 30m (ONLINE)
 
-. FIN dyn load all but video
-
-. put all together, finalize !!! 30m
-move:: hg clone https://infinitools@bitbucket.org/ampae/bonsai-front
-
 . add location and picture preview !!!
-. add forms, settings !!!
+. add settings !!!
 
 . fix breakpoints, make 3, remove right on 2 point.
 
 //===
-~. check dyn load video, use json variables for it !!! 30m (PRO)
-. dyn load all data to top, asides etc.. 30m (PRO)
-.. note: count, list loop etc.. (PRO)
-. js html articles, etc.. single load file, put all together !!! (PRO)
+. single AJAX load file, put all together !!! (PRO)
 
 . parallax (PRO)
-. blog ? (PRO)
 . fix lightbox ref popup compatibility (pro)
 . add lightbox video and maps (PRO)
-. fix !!! note-top feed
-
-PRO::
-. form validation
-. articles json
-
-=== V === DONE ===
-
-. fix mobile (and desktop! header) cover background image !!! ? (ONLINE)(MOB)
