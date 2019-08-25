@@ -87,7 +87,7 @@ $.ajax({
       //if (true) {
         r += '<figure style="">';
         r += '<a style="color:#444;text-decoration:none;" href="'+val.link+'">';
-              r += '<img style="width:auto;height:auto;width:auto;max-width: 100%;max-height:120px;" src="img/1.jpg" class="" alt="IMG" />';
+              r += '<img style="width:auto;height:auto;width:auto;max-width: 100%;max-height:120px;" src="'+val.img+'" class="" alt="IMG" />';
               r += '</a>';
         r += '</figure>';
       //}
@@ -95,36 +95,18 @@ $.ajax({
       r +='<div id="second" style="flex-grow:1;background-color:#fff;padding:.4em;">';
       r +='<a href="'+val.link+'" style="color:#fff;">';
       r +='<p style="margin:0;padding:0;color:#555;font-size:1em;font-weight:bold;">';
-      r +='One Year Home Warranty</p>';
+      r += val.subj+'</p>';
       r +='<p style="margin:0;padding:0;color:#555;font-size:.9em;">'+val.note+'</p>';
-      r +='<p style="margin:0;padding:0;color:#555;font-weight:bold;font-size:.9em;">MyBRAND</p>';
+      r +='<p style="margin:0;padding:0;color:#555;font-weight:bold;font-size:.9em;">'+val.brand+'</p>';
       r +='</a>';
       r +='</div>';
       r +='<div id="third" style="background-color:#fff;padding:.4em;">';
-      r +='<a href="https://www.cpxbee" style="color:#444;text-decoration:none;">';
+      r +='<a href="'+val.link+'" style="color:#444;text-decoration:none;">';
       r +='<p style="margin:0;padding:0;color:#000;font-size:1em;font-weight:bold;">&#x25B7;';
       r +='</p>';
       r +='</a>';
       r +='</div>';
       r +='</div>';
-
-      //r +='<p style="margin:0;padding:0;color:#000;font-size:1em;font-weight:bold;">';
-      //r +='<a href="https://www.cpxbee" style="color:#fff;">&#x25B7;</a>';
-      //r +='</p>';
-
-/*
-      r +='<div style="width:98%;height:auto;margin:0;padding:5px;';
-      r +='color:#fff;background-color:#eee;font-family:Verdana, Arial, Helvetica, sans-serif;">';
-      r +='<a href="http://www.aaa.com/deep" style="margin:0;padding:0;font-weight:normal;';
-      r +='font-size:1.1em;color:#555;text-decoration:none;"><span style="font-weight:bold;">';
-      r +='One Year Home Warranty</span><br />';
-      r +='Home Inspection - Up to $400 edhgdfghg jfhfghdrst thdhdrgsrydjhd</a><br />';
-      r +='<a href="http://www.aaa.com" style="margin:0;padding:0;color:#555;font-weight:bold;';
-      r +='font-size:.8em;background:inherit;text-decoration:none;">MyBRAND</a>';
-      r +='<a href="https://www.cpxbee" style="float:right;margin:0;padding:0;';
-      r +='color:#000;font-size:1em;text-decoration:none;font-weight:bold;">&#x25B7;</a></div>';
-*/
-
 
       return r + '\n';
     }

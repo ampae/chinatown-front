@@ -2,33 +2,9 @@
    {
       "uid":3001337238,
       "did":"5262535899466112",
-      "note":"I am at: Sunny Beach California",
+      "note":"You have 1 message!",
       "ts":1555911909,
       "uname":"admin",
-      "link":"#"
-   },
-   {
-     "uid":3001337238,
-     "did":"5262535899466112",
-     "note":"I am at: Sunny Beach California",
-     "ts":1555911909,
-     "uname":"admin",
-     "link":"#"
-   },
-   {
-     "uid":3001337238,
-     "did":"5262535899466112",
-     "note":"I am at: Sunny Beach California",
-     "ts":1555911909,
-     "uname":"admin",
-     "link":"#"
-   },
-   {
-     "uid":3001337238,
-     "did":"5262535899466112",
-     "note":"I am at: Sunny Beach California",
-     "ts":1555911909,
-     "uname":"admin",
-     "link":"#"
+      "link":"signin.html"
    }
 ]

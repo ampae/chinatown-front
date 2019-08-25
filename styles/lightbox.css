@@ -19,6 +19,10 @@
  * </summary>
  * </codeheader>
 */
+dialog {
+	background: transparent;
+	border: none;
+}
 .qt_popup_overlay {
 	position: fixed;
 	right: 0;

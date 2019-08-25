@@ -17,15 +17,15 @@
  * </summary>
  * </codeheader>
 */
-
+/*
 jQuery(function($) {
-  var qtPopupTmpl = '<div id="qt_popup" class="qt_popup"><div class="qt_popup_header">';
+  var qtPopupTmpl = '<div class="qt_popup_header">';
   qtPopupTmpl += '<span id="qt_popup_close" class="qt-popup-close-button">X</span>';
   qtPopupTmpl += '</div><div class="qt_popup_body"><div class="qt_popup_content"></div></div>';
-  qtPopupTmpl += '<div class="qt_popup_footer"></div></div>';
-  $("body").prepend(qtPopupTmpl);
+  qtPopupTmpl += '<div class="qt_popup_footer"></div>';
+  $("#qt_popup").prepend(qtPopupTmpl);
 });
-
+*/
 jQuery(document).on('click', '#qt_popup_close', function() {qt_popup_down();});
 //jQuery(document).on('click', '#qt_popup_overlay', function() {qt_popup_down();});
 jQuery(document).on('click', '#qt_popup .qt_popup_content', function() {qt_popup_down();});

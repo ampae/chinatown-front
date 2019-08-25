@@ -2,10 +2,10 @@
   {
       "uid":3001337238,
       "did":"5262535899466112",
-      "value":"I am at: Sunny Beach California",
+      "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "ts":1555911909,
       "value_3":"",
-      "value_4":"Sunny Beach California",
+      "value_4":"Lorem ipsum dolor sit amet",
       "value_lon":"34.4208",
       "value_lat":"119.6982",
       "status":1,
@@ -22,7 +22,7 @@
    {
       "uid":3001337238,
       "did":"6055569126702202",
-      "value":"haha",
+      "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "ts":1555911856,
       "value_3":"img\/1.jpg",
       "value_4":"",
@@ -42,7 +42,7 @@
    {
       "uid":3001337238,
       "did":"3435756909085494",
-      "value":"lala",
+      "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "ts":1555911754,
       "value_3":"",
       "value_4":"",

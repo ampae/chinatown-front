@@ -2,33 +2,19 @@
    {
       "uid":3001337238,
       "did":"5262535899466112",
-      "note":"I am at: Sunny Beach California I am at: Sunny Beach California I am at: Sunny Beach CaliforniaI am at: Sunny Beach CaliforniaI am at: Sunny Beach CaliforniaI am at: Sunny Beach California",
-      "ts":1555911909,
-      "uname":"admin",
-      "link":"#"
+      "subj":"Lorem ipsum dolor sit amet",
+      "note":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "brand":"MyBrand",
+      "link":"https://example.com",
+      "img":"img/1.jpg"
    },
    {
      "uid":3001337238,
      "did":"5262535899466112",
-     "note":"I am at: Sunny Beach California",
-     "ts":1555911909,
-     "uname":"admin",
-     "link":"#"
-   },
-   {
-     "uid":3001337238,
-     "did":"5262535899466112",
-     "note":"I am at: Sunny Beach California",
-     "ts":1555911909,
-     "uname":"admin",
-     "link":"#"
-   },
-   {
-     "uid":3001337238,
-     "did":"5262535899466112",
-     "note":"I am at: Sunny Beach California",
-     "ts":1555911909,
-     "uname":"admin",
-     "link":"#"
+     "subj":"Lorem ipsum dolor sit amet",
+     "note":"Lorem ipsum dolor sit amet, consectetur adip.",
+     "brand":"MyBrand",
+     "link":"https://example.com",
+     "img":"img/1.jpg"
    }
 ]
