@@ -26,5 +26,12 @@
       "active":0,
       "upper":0,
      "link":"dashboard.html"
+   },
+   {
+     "value":"Download",
+      "icon":"fa-download",
+      "active":0,
+      "upper":0,
+     "link":"https://github.com/ampae/chinatown-front"
    }
 ]

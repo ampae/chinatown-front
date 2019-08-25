@@ -8,6 +8,8 @@ Tired from Bootstrap Look&Feel, try Chinatown-FrontEnd HTML5/CSS3 Lightweight Fr
 . check lightbox !
 . fix js libs for json loading !!!
 
+. add "list of features" homepage !!!
+
 . make a video with Atom on background to show code !
 
 ++tag cloud for index Left!
