@@ -1,16 +1,13 @@
-.. also fix all aside text
+.. change text on demo homepage
+. add "list of features" homepage !!!
 
 both php+js libs for HTML5 generation!!!
 
-Tired from Bootstrap Look&Feel, try Chinatown-FrontEnd HTML5/CSS3 Lightweight FrameWork
-
 . create documentation !!!
-. check lightbox !
+. upload new ver and check lightbox !
 . fix js libs for json loading !!!
 
-. add "list of features" homepage !!!
-
-. make a video with Atom on background to show code !
+. make promo video with Atom on background to show code !
 
 ++tag cloud for index Left!
 

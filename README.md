@@ -20,7 +20,8 @@ Feel free to raise an issue or submit a pull request.
 
 ## HTML5 structuure + CSS3 + JS + jQuery
 
-ChinaTown Front provides All-in-One solution to bootstrap your project. Tired from Bootstrap Look&Feel, try Chinatown Front.
+ChinaTown Front provides All-in-One solution for your next project. Tired from Bootstrap Look&Feel, try Chinatown-FrontEnd HTML5/CSS3 Lightweight FrameWork.
+
 
 HTML5
 Full HTML5 structure out of the box

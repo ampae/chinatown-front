@@ -26,9 +26,6 @@ jQuery(function($) {
   $("#qt_popup").prepend(qtPopupTmpl);
 });
 */
-jQuery(document).on('click', '#qt_popup_close', function() {qt_popup_down();});
-//jQuery(document).on('click', '#qt_popup_overlay', function() {qt_popup_down();});
-jQuery(document).on('click', '#qt_popup .qt_popup_content', function() {qt_popup_down();});
 
 jQuery(function($) {
 
@@ -65,9 +62,13 @@ $('<span class=desc>' + tmp_desc + '</span>').appendTo('#qt_popup  .qt_popup_foo
 qt_popup_up();
 
 	});
+
 });
 
 
+jQuery(document).on('click', '#qt_popup_close', function() {qt_popup_down();});
+//jQuery(document).on('click', '#qt_popup_overlay', function() {qt_popup_down();});
+jQuery(document).on('click', '#qt_popup .qt_popup_content', function() {qt_popup_down();});
 
 
 
