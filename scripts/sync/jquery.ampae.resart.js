@@ -42,38 +42,38 @@ jQuery(function($){
 
 function ampaeDisplayDataRec(lim, off)
 {
-$.ajax({
-    type: "GET",
-    async: true,
-    url: ampaeGetDataUrl,
-    data: false,
-    mimeType: "application/json",
-    data: "limit=" + lim + "&offset=" + off + "&uid=" + $('#results').attr("data-results"),
-    cache: false,
-    dataType: "JSON",
-    beforeSend: function () {
-        $("#loader_message").html("").hide();
-        $('#loader_image').show();
-    },
-    success: function (data) {
-        $('#loader_image').hide();
-        var items = [];
-
-        $.each(data, function ( key, val ) {
-            items.push(ampaeQtBox(key, val));
-        });
-
-            $("#results").append(items);
-
-        if (data == "") {
-            $("#loader_message").html('<div class="cnt"><hr></div>').show()
-        } else {
-            $("#loader_message").html('<div class="cnt"><button class="btn btn-medium btn-skew btn-shadow-dark btn-red" type="button">Load More..</button></div><br />').show();
-        }
-
-    }
+  $.ajax({
+      type: "GET",
+      async: true,
+      url: ampaeGetDataUrl,
+      data: false,
+      mimeType: "application/json",
+      data: "limit=" + lim + "&offset=" + off + "&uid=" + $('#results').attr("data-results"),
+      cache: false,
+      dataType: "JSON",
+      beforeSend: function () {
+          $("#loader_message").html("").hide();
+          $('#loader_image').show();
+      },
+      success: function (data) {
+          ampaeQtBoxData(data);
+      }
     });
 }
+
+  function ampaeQtBoxData(data) {
+    $('#loader_image').hide();
+    var items = [];
+    $.each(data, function ( key, val ) {
+        items.push(ampaeQtBox(key, val));
+    });
+    $("#results").append(items);
+    if (data == "") {
+        $("#loader_message").html('<div class="cnt"><hr></div>').show()
+    } else {
+        $("#loader_message").html('<div class="cnt"><button class="btn btn-medium btn-skew btn-shadow-dark btn-red" type="button">Load More..</button></div><br />').show();
+    }
+  }
 
 
     function ampaeQtBox(key, val)

@@ -1,27 +1,25 @@
 .. change text on demo homepage
 . add "list of features" homepage !!!
 
-both php+js libs for HTML5 generation!!!
-
-. create documentation !!!
-. upload new ver and check lightbox !
-. fix js libs for json loading !!!
+. dashboard->home
+. ++dashboard with graph, stat-boxes, settings form..
 
 . make promo video with Atom on background to show code !
 
-++tag cloud for index Left!
-
-. split all files !! 30m
+. split all css main files
 . finally add less (compiller only!) 30m (ONLINE)
 
-. add location and picture preview !!!
-. add settings !!!
-
-. fix breakpoints, make 3, remove right on 2 point.
+. create documentation !!!
+. check img upload preview !!!
 
 //===
 . single AJAX load file, put all together !!! (PRO)
-
+. both php+js libs for HTML5 generation!!!
+. fix breakpoints, make 3, remove right on 2 point.
+. add mob menu for index
+++tag cloud for index Left!
 . parallax (PRO)
+
+. fix lightbox on dyn content!
 . fix lightbox ref popup compatibility (pro)
 . add lightbox video and maps (PRO)
