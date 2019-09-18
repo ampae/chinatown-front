@@ -7,6 +7,10 @@ ChinaTown Front is a **Modern All-in-One LightWeight FrontEnd FrameWork**.
 
 <a href="https://ampae.com/"><img src="https://raw.githubusercontent.com/ampae/chinatown-front/master/docs/images/chinatown.png" alt="ChinaTown Front: a modern FrontEnd framework" style="max-width:100%;" width="192" height="192"></a>
 
+## IDEA
+
+HTML5 Framework that reuse single unmodified HTML5 file for every view that contain all usual sections and never have to be edited. View is altered by different CSS3 file. Content is taken from JSON files for all HTML5 sections by using JavaScript or PHP.
+
 ## DEMO
 
 https://ampae.com/chinatown-front
