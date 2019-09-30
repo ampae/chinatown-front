@@ -9,7 +9,7 @@ ChinaTown Front is a **Modern All-in-One LightWeight FrontEnd FrameWork**.
 
 ## IDEA
 
-HTML5 Framework that reuse single unmodified HTML5 file for every view that contain all usual sections and never have to be edited. View is altered by different CSS3 file. Content is taken from JSON files for all HTML5 sections by using JavaScript or PHP.
+HTML5 Framework that reuses one unchanged HTML5 file for each view that contains all the usual sections and never needs to be edited. The view is changed by another CSS3 file. Page structure is not dependent on any grid system. Content comes from JSON files for all HTML5 sections using JavaScript or PHP.
 
 ## DEMO
 
@@ -22,7 +22,7 @@ ChinaTown Front is constantly in development! Try it out now:
 
 Feel free to raise an issue or submit a pull request.
 
-## HTML5 structuure + CSS3 + JS + jQuery
+## HTML5 structure + CSS3 + JS + jQuery
 
 ChinaTown Front provides All-in-One solution for your next project. Tired from Bootstrap Look&Feel, try Chinatown-FrontEnd HTML5/CSS3 Lightweight FrameWork.
 

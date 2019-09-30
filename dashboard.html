@@ -12,7 +12,9 @@
 
     <script type='text/javascript' src="scripts/asideLeft.js?v=3.1"></script>
     <script type='text/javascript' src="scripts/headerUser.js?v=3.1"></script>
-    <script type='text/javascript' src="scripts/geo.js?v=3.1"></script>
+
+    <script type='text/javascript' src="libs/jquery.min.js?v=3.1"></script>
+
 
 </head>
 <body>
@@ -51,82 +53,6 @@
     <main id="main" class="content" role="main" aria-label="main">
         <div class="container">
 
-            <div class="well">
-
-                <div class="co-update-bottom colFlexUp">
-                    <ul class="list-inline">
-                        <li>
-                        </li>
-                        <li><span id="co-img" class="co-cursor" onclick="javascript:getFfile()"> <i class="fa fa-camera fa-2x"></i></span></li>
-
-                        <li><span id="co-loc" class="co-cursor" onclick="javascript:showlocation()"> <i class="fa fa-map-marker fa-2x"></i></span></li>
-                        <!---
-    <li>Location: <span id="colocation"></span></li>
--->
-                    </ul>
-
-                    <!---
-<div class="co-nini">Latitude: <span id="latitude"></span> Longitude: <span id="longitude"></span></div>
--->
-
-                    <span id="co-post-img"></span>
-                </div>
-
-                <form action="post" method="POST" id="status-form" class="form-horizontal" role="form">
-                    <fieldset>
-                        <input type="hidden" name="tx" value="tx_bd026e4c40619ceb1d1dc95d05125d21" />
-                        <input type="hidden" name="tx_bd026e4c40619ceb1d1dc95d05125d21" value="5605300f3b9241e3c9f84665f89216d9" />
-                        <input type="hidden" name="fid" value="status-form" />
-
-                        <div class="co-update-top">
-                            <div id="preview" align="center"></div>
-                            <br />
-                        </div>
-
-                        <div class="form-group col-post">
-
-                            <div class="col-post-ava">
-                                <span class=""><img class="media-object" src="img/user.png" alt="Avatar" height="70" width="70"></span>
-                            </div>
-                            <div class="col-post-text">
-                                <textarea id="co-my-mind" name="co-my-mind" class="form-control" placeholder="What's New"></textarea>
-                            </div>
-                            <div class="col-post-hidden">
-
-                                <input type="hidden" name="co-lat" id="co-lat">
-                                <input type="hidden" name="co-lon" id="co-lon">
-                                <input type="hidden" name="loc" id="loc">
-                            </div>
-
-                        </div>
-                        <input type="hidden" name="co-act" value="status" />
-
-                        <div class="col-post-submit">
-
-                            <input type="submit" id="submit" class="btn btn-medium btn-blue pull-right sp-all" name="submit" value="Post" />
-                        </div>
-
-                    </fieldset>
-                </form>
-
-                <form action="usr/au" method="POST" id="imageform" class="form-horizontal" enctype="multipart/form-data" role="form">
-
-                    <fieldset>
-                        <input type="hidden" name="tx" value="tx_308460f88a9885f3009ec85d39a5c99b" />
-                        <input type="hidden" name="tx_308460f88a9885f3009ec85d39a5c99b" value="e72dc21201d3c9f9dc365df708dffec6" />
-                        <input type="hidden" name="fid" value="imageform" />
-                        <input type="file" name="photoimg" id="photoimg" placeholder="Photoimg" />
-                        <input type="hidden" name="iid" value="202cea78-7548-4b77-b622-05656de1a41e" />
-                        <input type="hidden" name="co-mid" />
-                    </fieldset>
-                </form>
-
-            </div>
-
-            <div id="loader_image" class="cnt"><img src="img/loader.gif" alt="" width="24" height="24"> Loading...please wait</div>
-            <div id="results" data-results="12345"></div>
-            <div id="loader_message"></div>
-            <!-- Load More Btn -->
 
         </div>
     </main>
@@ -148,18 +74,12 @@
       <div class="qt_popup_footer"></div>
     </dialog>
 
-    <script type='text/javascript' src="libs/jquery.min.js?v=3.1"></script>
     <script type='text/javascript' src="scripts/jquery.form.min.js?v=3.1"></script>
-    <script type='text/javascript' src="scripts/jquery.imgup.js?v=3.1"></script>
-
-    <script type='text/javascript' src="scripts/jquery.qtlightbox.js?v=3.1"></script>
 
     <script type='text/javascript' src="scripts/left-nav-menu.jquery.js?v=3.1"></script>
 
     <script type='text/javascript' src="scripts/sync/jquery.ampae.restop.js?v=3.1"></script>
     <script type='text/javascript' src="scripts/sync/jquery.ampae.restop-note.js?v=3.1"></script>
-
-    <script type='text/javascript' src="scripts/sync/jquery.ampae.resart.js?v=3.1"></script>
 
     <script type='text/javascript' src="scripts/sync/jquery.ampae.resleft.js?v=3.1"></script>
     <script type='text/javascript' src="scripts/sync/jquery.ampae.resright.js?v=3.1"></script>

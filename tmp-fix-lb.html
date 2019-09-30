@@ -84,11 +84,9 @@ document.getElementById('themeSwitch').addEventListener('change', function(event
             <div id="topuser" class="topuser dropdown">
             </div>
 
-<!--
             &#9680;
             <label>Light<input type="radio" name="theme" value="day" checked onclick="handleClick(this)"/></label>
             <label>Dark<input type="radio" name="theme" value="night" onclick="handleClick(this)"/></label>
--->
 
 <!--
 <div class="switch">
@@ -103,10 +101,7 @@ document.getElementById('themeSwitch').addEventListener('change', function(event
         <section id="cozy" class="cozy">
 
             <section id="bill" class="bill">
-                <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=LqXWIG93hoM',containment:'self',autoPlay:true, loop:1, mute:true, rel:0, startAt:0, opacity:1, mute: true, showControls:false}">
-                    <div id="bannerOverlay" class="overlay">
-                    </div>
-                </div>
+
             </section>
 
             <section id="cta-home" class="cta-home">
@@ -165,50 +160,12 @@ document.getElementById('themeSwitch').addEventListener('change', function(event
           </article>
           <!-- #post-## -->
 
-          <article id="post-67" class="hentry">
 
-              <figure>
-                  <div class="panel-thumbnail">
-                    <span class="qt-lightbox" data-source="https://placeimg.com/640/480/any" title="Image Title" desc="Image Description">
-                      <a href="https://placeimg.com/640/480/any">
-                        <img width="250" height="250" src="https://placeimg.com/640/480/any" class="" alt="Hello World" />
-                      </a>
-                    </span>                    </div>
-              </figure>
+          <div id="loader_image" class="cnt"><img src="img/loader.gif" alt="" width="24" height="24"> Loading...please wait</div>
+          <div id="results" data-results="12345">
 
-              <header class="entry-header">
-
-                  <section class="author">
-                      <a class="author vcard" href="#"><img alt='' src='https://placeimg.com/640/480/any' class='avatar avatar-50 photo' height='50' width='50' /> &bull; avatar</a>
-                  </section>
-
-                  <section class="time-loc">
-                      <time class="updated" datetime="2019-05-18">May 18, 2019</time>
-                  </section>
-
-              </header>
-              <!-- .entry-header -->
-
-              <section class="entry-content">
-                  <h2 class="entry-title"><a href="#" rel="bookmark">Hello World</a></h2>
-                  <p>Hello World</p>
-                  <br />
-              </section>
-              <!-- .entry-content -->
-
-              <footer class="entry-footer">
-                  <div class="pull-right">
-                      <a class="btn btn-small btn-orange-inverse" href="#">read | comment</a>
-                  </div>
-                  <p class="">
-                      <a href="#">comments</a>
-                  </p>
-                  <a href="#" rel="category tag">HTML</a>
-                  <br /> # <a href="#" rel="tag">css</a>
-              </footer>
-              <!-- .entry-footer -->
-          </article>
-          <!-- #post-## -->
+          </div>
+          <div id="loader_message"></div>
 
         </div>
     </main>
@@ -237,10 +194,10 @@ document.getElementById('themeSwitch').addEventListener('change', function(event
       <div class="qt_popup_footer"></div>
     </dialog>
 
-    <script type='text/javascript' src="libs/jquery.mb.YTPlayer.min.js?v=3.1"></script>
-    <script type='text/javascript' src="scripts/jquery.mb-player.js?v=3.1"></script>
-
     <script type='text/javascript' src="scripts/jquery.qtlightbox.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.resart.js?v=3.1"></script>
+
 
 </body>
 </html>

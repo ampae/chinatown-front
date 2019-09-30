@@ -14,18 +14,18 @@
      "link":"dashboard.html"
    },
    {
+     "value":"Wall",
+      "icon":"fa-sliders-h",
+      "active":0,
+      "upper":0,
+     "link":"wall.html"
+   },
+   {
      "value":"Sign Out",
       "icon":"fa-sign-out-alt",
       "active":1,
       "upper":0,
      "link":"index.html"
-   },
-   {
-     "value":"Settings",
-      "icon":"fa-sliders-h",
-      "active":0,
-      "upper":0,
-     "link":"dashboard.html"
    },
    {
      "value":"Download",

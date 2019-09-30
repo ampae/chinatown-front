@@ -19,6 +19,42 @@
  * </summary>
  * </codeheader>
 */
+
+/*
+@media (prefers-color-scheme: dark)
+{
+	body {
+		background-color: #111;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	html {
+		filter: invert(100%);
+	}
+}
+
+:root {
+	--background-color: #ededed;
+	--page-background: #fff;
+	--text-color: #212121;
+	--color-alpha: #c3423f;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #111;
+		--page-background: #212121;
+		--text-color: #ededed;
+		--color-alpha: #50a8d8;
+	}
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+*/
+
 body {
 	/*
 	background: rgba(250, 250, 250, .7) url('../img/page.png') repeat top left fixed;
@@ -36,7 +72,13 @@ a:hover {
 	color: #027280 !important;
 	text-decoration: none;
 }
+main.dark {
+  background-color: rgb(30,34,39);
+  color: #fff;
+}
 */
+
+
 
 header {
 	background: rgba(250, 250, 250, .7) url('../img/page.png') repeat top left fixed;
@@ -46,10 +88,14 @@ header {
 main {
 	/*
 	background: transparent;
+	background: rgba(250, 250, 250, .7) url('../img/page.png') repeat top left fixed;
+
 */
-background: rgba(250, 250, 250, .7) url('../img/page.png') repeat top left fixed;
+background: transparent;
 
 }
+
+
 
 .asideRight {
 	background: rgba(250, 250, 250, .7) url('../img/page.png') repeat top left fixed;
@@ -213,4 +259,32 @@ form input[type="email"]:focus,
 form input[type="password"]:focus,
 form textarea:focus,form select:focus {
 background:rgba(255,255,255,0.1);
+}
+
+
+
+:root {
+  --background-color: #FEFEFE;
+  --bg-dark: #111;
+  --text-dark: #EEE;
+}
+
+.night {
+  --background-color: var(--bg-dark);
+  --text-color: var(--text-dark);
+  --link-color: lightblue;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color, #666);
+  transition: background 2s ease-out, color 2s ease-out;
+}
+
+a {
+  color: var(--link-color, lightcoral);
+  transition: color 200ms;
+}
+
+a:hover {
 }
