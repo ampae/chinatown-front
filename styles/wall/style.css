@@ -323,8 +323,3 @@ input[type="file"],
 	display: flex;
 	justify-content: space-around;
 }
-
-#usr_chart {
-	height:200px;
-	width:100%;
-}
