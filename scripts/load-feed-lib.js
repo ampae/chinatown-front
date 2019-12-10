@@ -41,42 +41,29 @@ function ampaeAppendHTML(id,data,pos) {
   document.getElementById(id).insertAdjacentHTML(pos, data);
 }
 
-
-
 /*
 
-function loadxJSON(file,callback) {
+*/
+function ampaeDealMoreJson(file,callback,id,lim,off) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open('GET', file, true);
+  xobj.open('GET', file + "?limit=" + lim + "&offset=" + off, true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
-      callback(JSON.parse(xobj.responseText));
+      document.getElementById('loader_image').style.display = "none";
+      ampaeJsonMoreLoop(JSON.parse(xobj.responseText),callback,id,'afterbegin');
     }
   };
   xobj.send(null);
  }
 
-function ampaeAppendHTML(id,data) {
-  document.getElementById(id).insertAdjacentHTML('beforeend', data);
-}
-
-function loadJSON(file,callback,callback2,id) {
-var xobj = new XMLHttpRequest();
- xobj.overrideMimeType("application/json");
- xobj.open('GET', file, true);
- xobj.onreadystatechange = function () {
- if (xobj.readyState == 4 && xobj.status == "200") {
- callback(xobj.responseText,callback2,id);
+ function ampaeJsonMoreLoop(data,callback,id,pos) {
+   if (data == "") {
+     document.getElementById('loader_message').innerHTML='<div class="cnt"><hr></div>';
+   } else {
+     document.getElementById('loader_message').innerHTML='<div class="cnt"><button class="btn btn-medium btn-skew btn-shadow-dark btn-red" type="button">Load More..</button></div><br />';
+   }
+    data.forEach(function (val) {
+        ampaeAppendHTML(id,callback(val),pos);
+    });
  }
- };
- xobj.send(null);
- }
-
- function dealJsonHtml(data,callback,id) {
-   var mydata = JSON.parse(data);
-   var items = callback(mydata);
-   var d1 = document.getElementById(id);
-   d1.insertAdjacentHTML('beforeend', items);
- }
-*/
