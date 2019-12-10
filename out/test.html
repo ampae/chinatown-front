@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>ChinaTown Front - DashBoard TMPL</title>
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <script type='text/javascript' src="libs/jquery.min.js?v=3.1"></script>
+
+    <link rel="stylesheet" href="styles/style.css?v=3.1">
+    <link rel="stylesheet" href="styles/dashboard/style.css?v=3.1">
+
+<style>
+
+
+/* The card */
+.card {
+  position: relative;
+  height: 450px;
+  width: 900px;
+  margin: 200px auto;
+
+}
+
+/* Image on the left side */
+.thumbnail {
+  float: left;
+  position: relative;
+  left: 30px;
+  top: -30px;
+background: transparent;
+  width: 60%;
+  height: 100%;
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+/*object-fit: cover; */
+/*object-position: center; */
+img.left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Right side of the card */
+.right {
+  margin-left: 590px;
+  margin-right: 20px;
+}
+
+h1 {
+  padding-top: 15px;
+  font-size: 1.3rem;
+  color: #4B4B4B;
+}
+
+.author {
+  background-color: #9ECAFF;
+  height: 30px;
+  width: 110px;
+  border-radius: 20px;
+}
+
+.author > img {
+  padding-top: 5px;
+  margin-left: 10px;
+  float: left;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+h2 {
+  padding-top: 8px;
+  margin-right: 6px;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.separator {
+  margin-top: 10px;
+  border: 1px solid #C3C3C3;
+}
+
+p {
+  text-align: justify;
+  padding-top: 10px;
+  font-size: 0.95rem;
+  line-height: 150%;
+  color: #4B4B4B;
+}
+
+/* DATE of release */
+h5 {
+  position: absolute;
+  left: 30px;
+  bottom: -120px;
+  font-size: 6rem;
+  color: #C3C3C3;
+}
+
+h6 {
+  position: absolute;
+  left: 30px;
+  bottom: -55px;
+  font-size: 2rem;
+  color: #C3C3C3;
+}
+
+/* Those futur buttons */
+ul {
+  margin-left: 250px;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  padding-right: 40px;
+  color: #7B7B7B;
+}
+
+/* Floating action button */
+.fab {
+  position: absolute;
+  right: 50px;
+  bottom: -40px;
+  box-sizing: border-box;
+  padding-top: 18px;
+  background-color: #1875D0;
+  width: 80px;
+  height: 80px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/*
+
+================================================================================
+
+*/
+
+
+
+
+</style>
+
+</head>
+<body>
+    <header id="header" class="header site-header" role="banner" aria-label="header banner">
+        <section id="topnav" class="topnav navBarSmall">
+
+            <div id="branding" class="branding">
+                <a href="index.html">
+                    <img id="headerLogoImg" src="img/logo-white.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="LOGO" />
+                </a>
+            </div>
+
+            <div class="headerMobMenu">
+                <label for="chkMenu" id="chkMenuLabel" class="mobmenu-toggle">&#9776;</label>
+                <input type="checkbox" id="chkMenu" onclick="showHideAsideLeft(this)" />
+            </div>
+
+            <div class="filler"></div>
+
+            <section id="headerSearch" class="headerSearch" role="search" aria-label="header search">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </section>
+
+            <div id="notifications" class="notifications dropdown">
+            </div>
+
+            <div id="topuser" class="topuser dropdown">
+            </div>
+
+        </section>
+        <!-- .topnav -->
+
+    </header>
+
+    <main id="main" class="content" role="main" aria-label="main">
+        <div class="container">
+
+
+
+
+<div class="card">
+  <div class="thumbnail"><img class="left" src="https://cdn2.hubspot.net/hubfs/322787/Mychefcom/images/BLOG/Header-Blog/photo-culinaire-pexels.jpg"/></div>
+  <div class="right">
+    <h1>Why you Need More Magnesium in Your Daily Diet</h1>
+    <div class="author"><img src="https://randomuser.me/api/portraits/men/95.jpg"/>
+      <h2>Igor MARTY</h2>
+    </div>
+    <div class="separator"></div>
+    <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy production and synthesis of protein and enzymes. It contributes to the development of bones and most importantly it is responsible for synthesis of your DNA and RNA. A new report that has appeared in theBritish Journal of Cancer, gives you another reason to add more magnesium to your diet...</p>
+  </div>
+  <h5>12</h5>
+  <h6>JANUARY</h6>
+  <ul>
+    <li><i class="fa fa-eye fa-2x"></i></li>
+    <li><i class="fa fa-heart-o fa-2x"></i></li>
+    <li><i class="fa fa-envelope-o fa-2x"></i></li>
+    <li><i class="fa fa-share-alt fa-2x"></i></li>
+  </ul>
+  <div class="fab"><i class="fa fa-arrow-down fa-3x"> </i></div>
+</div>
+
+
+
+
+
+        </div>
+    </main>
+
+    <aside id="asideLeft" class="asideLeft" role="complementary" aria-label="aside left">
+        <nav role="navigation" id="leftside-navigation" class="nano" aria-label="aside left navigation">
+        </nav>
+    </aside>
+
+    <aside id="asideRight" class="asideRight" role="complementary" aria-label="aside right">
+    </aside>
+
+    <dialog id="qt_popup" class="qt_popup">
+      <div class="qt_popup_header">
+        <span id="qt_popup_close" class="qt-popup-close-button">X</span>
+      </div>
+      <div class="qt_popup_body"><div class="qt_popup_content"></div>
+      </div>
+      <div class="qt_popup_footer"></div>
+    </dialog>
+
+    <script type='text/javascript' src="libs/jquery.form.min.js?v=3.1"></script>
+    <script type='text/javascript' src="libs/jquery.flot.min.js"></script>
+    <script type='text/javascript' src="scripts/left-nav-menu.jquery.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.restop.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.restop-note.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.resleft.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.resright.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.chart.js?v=3.1"></script>
+
+
+</body>
+</html>
