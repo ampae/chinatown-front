@@ -44,6 +44,28 @@ function ampaeAppendHTML(id,data,pos) {
 /*
 
 */
+
+function ampaeJsonCount(file,id) {
+  var items = 0;
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("application/json");
+  xobj.open('GET', file, true);
+  xobj.onreadystatechange = function (items) {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      //callback(JSON.parse(xobj.responseText).length);
+      items = JSON.parse(xobj.responseText).length;
+      if (items>0) {
+        document.getElementById(id).insertAdjacentHTML('afterbegin', items);
+        document.getElementById(id).style.display = "block";
+      }
+    }
+  }
+  xobj.send(null);
+}
+
+/*
+
+*/
 function ampaeDealMoreJson(file,callback,id,lim,off) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
