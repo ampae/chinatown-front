@@ -1,37 +1,21 @@
-loadxJSON('feeds/feed-right.json', ampaeQtRight, 'asideRight'); // feed, callback, id
-
-
-function ampaeQtRight(data) {
-    var s = '';
-    var items = '';
-    var i = 0;
-
-    data.forEach(function (val, key) {
-      if (typeof val.link !== 'undefined' && val.link !== null) {
-          items += ampaeQtRightItem(val);
-          i++;
-      }
-    });
-
-    if (i > 0) {
-        s += items;
-    }
-    return s + '\n';
-}
+ampaeDealJson('feeds/feed-right.json', ampaeQtRightItem, 'asideRight'); // feed, callback, id, position
 
 function ampaeQtRightItem(val) {
+
+    if (typeof val.link === 'undefined' || val.link === null) { return; }
+
     var r = '';
 
     r += '<div style="display:flex;width:98%;height:auto;margin:0 0 .4em 0;padding:0;color:#444;';
     r += 'background-color:#eee;font-family:Verdana, Arial, Helvetica, sans-serif;">';
     r += '<div id="first" style="background-color:#fff;padding:0; flex-wrap: wrap;">';
-    //if (true) {
+    // if (true) {
     r += '<figure style="">';
     r += '<a style="color:#444;text-decoration:none;" href="' + val.link + '">';
     r += '<img style="width:auto;height:auto;width:auto;max-width: 100%;max-height:120px;" src="' + val.img + '" class="" alt="IMG" />';
     r += '</a>';
     r += '</figure>';
-    //}
+    // }
     r += '</div>';
     r += '<div id="second" style="flex-grow:1;background-color:#fff;padding:.4em;">';
     r += '<a href="' + val.link + '" style="color:#fff;">';
