@@ -37,6 +37,18 @@ so if the string "in" is found inside of document.readyState,
 then we know we are not ready yet.
 */
 
+function ampaeGetJson(file,callback) {
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("application/json");
+  xobj.open('GET', file, true);
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(JSON.parse(xobj.responseText));
+    }
+  };
+  xobj.send(null);
+ }
+
 function ampaeDealJson(file,callback,id,pos='afterbegin') {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
@@ -85,16 +97,20 @@ function ampaeJsonCountCls(id) {
 }
 
 function ampaeJsonCount(file,id) {
-  var items = 0;
+  var items = null;
+  var cnt = 0;
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
   xobj.open('GET', file, true);
   xobj.onreadystatechange = function (items) {
     if (xobj.readyState == 4 && xobj.status == "200") {
-      //callback(JSON.parse(xobj.responseText).length);
-      items = JSON.parse(xobj.responseText).length;
-      if (items>0) {
-        document.getElementById(id).insertAdjacentHTML('afterbegin', items);
+      items = JSON.parse(xobj.responseText);
+      cnt = items[0]['cnt'];
+      if (cnt>0) {
+        if (cnt>9) {
+          cnt='9+';
+        }
+        document.getElementById(id).innerHTML = cnt;
         document.getElementById(id).style.display = "block";
       }
     }

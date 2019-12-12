@@ -1,7 +1,9 @@
+. reuse json load !!!
+. count
 . finalize load css
 . ??? load js !!! head, foot
-. timer, click to load, count, reuse json load !!!
 . html loading delay !!!
+. https://www.kirupa.com/html5/detecting_touch_swipe_gestures.htm
 
 
 ???
