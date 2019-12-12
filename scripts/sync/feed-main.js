@@ -10,11 +10,11 @@ var ampaeGetDataImage = 'loader_image';
 document.getElementById("loader_message").onclick = function() {ampaeDisplayDataRec()};
 
 function ampaeDisplayDataRec() {
-  ampaeDealMoreJson(ampaeGetDataUrl, ampaeItemMain, ampaeGetDataRes, ampaeGetDataLimit, ampaeGetDataOffset);
   ampaeGetDataOffset = ampaeGetDataLimit + ampaeGetDataOffset;
+  ampaeDealMoreJson(ampaeGetDataUrl, ampaeItemMain, ampaeGetDataRes, ampaeGetDataLimit, ampaeGetDataOffset);
 }
 
-ampaeDealMoreJson(ampaeGetDataUrl, ampaeItemMain, ampaeGetDataRes, ampaeGetDataLimit, ampaeGetDataOffset);
+//ampaeDealMoreJson(ampaeGetDataUrl, ampaeItemMain, ampaeGetDataRes, ampaeGetDataLimit, ampaeGetDataOffset);
 
 
 function ampaeItemMain(val) {

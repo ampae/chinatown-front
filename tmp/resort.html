@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ChinaTown Front - Index TMPL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+body {
+    background: #eee;
+    font-family: sans-serif;
+}
+.box {
+    background: red;
+    height: 200px;
+    width: 200px;
+}
+.box h1 {
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+}
+.box h2 {
+    color: black;
+    font-size: 2.5em;
+    text-align: center;
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$( document ).ready(function() {
+var $divs = $("div.box");
+
+$('#alphBnt').on('click', function () {
+    var alphabeticallyOrderedDivs = $divs.sort(function (a, b) {
+        return $(a).find("h1").text() > $(b).find("h1").text();
+    });
+    $("#container").html(alphabeticallyOrderedDivs);
+});
+
+$('#numBnt').on('click', function () {
+    var numericallyOrderedDivs = $divs.sort(function (a, b) {
+        return $(a).find("h2").text() > $(b).find("h2").text();
+    });
+    $("#container").html(numericallyOrderedDivs);
+});
+});
+</script>
+
+</head>
+
+<body>
+    <header id="header" class="banner" role="banner" aria-label="header banner">
+
+        <section id="topnav" class="topnav">
+
+            <div id="branding" class="branding">
+                <a href="#">
+                    <img id="headerLogoImg" src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="LOGO" />
+                </a>
+            </div>
+
+<!--
+<div class="headerMobMenu">
+    <label for="chkMenu" id="chkMenuLabel" class="mobmenu-toggle">&#9776;</label>
+    <input type="checkbox" id="chkMenu" onclick="showHideAsideLeft(this)" />
+</div>
+
+<section id="headerSearch" class="headerSearch" role="search" aria-label="header search">
+    <input type="text" placeholder="Search..">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</section>
+-->
+
+            <div class="filler"></div>
+
+            <div id="notifications" class="notifications dropdown">
+            </div>
+
+            <div id="topuser" class="topuser dropdown">
+            </div>
+
+<!--
+            &#9680;
+            <label>Light<input type="radio" name="theme" value="day" checked onclick="handleClick(this)"/></label>
+            <label>Dark<input type="radio" name="theme" value="night" onclick="handleClick(this)"/></label>
+-->
+
+<!--
+<div class="switch">
+  <input class="switch__input" type="checkbox" id="themeSwitch">
+  <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
+  <div aria-hidden="true" class="switch__marker"></div>
+</div>
+-->
+        </section>
+        <!-- .topnav -->
+
+        <section id="cozy" class="cozy">
+
+            <section id="bill" class="bill">
+            </section>
+
+            <section id="cta-home" class="cta-home">
+            </section>
+
+        </section>
+
+    </header>
+
+    <main id="main" class="main content" role="main" aria-label="main">
+        <div class="container">
+
+<div class="wrap">
+    <button id="alphBnt">Alphabetical</button>
+    <button id="numBnt">Numerical</button>
+    <div id="container">
+      <div class="box">
+        <h1>B<h1>
+        <h2>10.35</h2>  
+      </div>
+    
+      <div class="box">
+        <h1>A<h1>
+        <h2>100.05</h2>
+      </div>
+    
+      <div class="box">
+        <h1>D<h1>
+        <h2>200</h2>  
+      </div>
+    
+      <div class="box">
+        <h1>C<h1>
+        <h2>5,510.25</h2>
+      </div>
+    </div>
+  </div>
+
+
+        </div>
+    </main>
+
+    <aside id="asideLeft" class="asideLeft" role="complementary" aria-label="aside left">
+        <nav role="navigation" id="leftside-navigation" class="nano" aria-label="aside left navigation">
+        </nav>
+    </aside>
+
+    <aside id="asideRight" class="asideRight" role="complementary" aria-label="aside right">
+    </aside>
+
+    <footer id="colophon" class="asideFooter" role="contentinfo">
+        <div class="site-info">
+        </div>
+        <!-- site-info -->
+    </footer>
+    <!-- #colophon -->
+
+    <dialog id="qt_popup" class="qt_popup">
+      <div class="qt_popup_header">
+        <span id="qt_popup_close" class="qt-popup-close-button">X</span>
+      </div>
+      <div class="qt_popup_body"><div class="qt_popup_content"></div>
+      </div>
+      <div class="qt_popup_footer"></div>
+    </dialog>
+
+</body>
+</html>

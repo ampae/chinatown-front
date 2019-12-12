@@ -19,6 +19,24 @@
  * </summary>
  * </codeheader>
 **/
+
+function ampaeDocumentReady(callback){
+  if (/loaded|complete/i.test(document.readyState)) {
+    callback();
+  } else {
+    setTimeout(ampaeDocumentReady,5,callback);
+  }
+}
+//ampaeDocumentReady(function(){});
+/*
+if( !/in/.test(document.readyState) ) {
+rowser has 3 loading states: "loading", "interactive", and "complete"
+(older WebKit also used "loaded", but you don't have to worry about that any more).
+You will notice that both "loading" and "interactive" contain the text "in"...
+so if the string "in" is found inside of document.readyState,
+then we know we are not ready yet.
+*/
+
 function ampaeDealJson(file,callback,id,pos='afterbegin') {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
@@ -42,8 +60,29 @@ function ampaeAppendHTML(id,data,pos) {
 }
 
 /*
-
+function ampaeJsonCount(file,id) {
+  var items = 0;
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("application/json");
+  xobj.open('GET', file, true);
+  xobj.onreadystatechange = function (items) {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      //callback(JSON.parse(xobj.responseText).length);
+      items = JSON.parse(xobj.responseText).length;
+      if (items>0) {
+        document.getElementById(id).insertAdjacentHTML('afterbegin', items);
+        document.getElementById(id).style.display = "block";
+      }
+    }
+  }
+  xobj.send(null);
+}
 */
+
+function ampaeJsonCountCls(id) {
+  document.getElementById(id).innerHTML = '';
+  document.getElementById(id).style.display = "none";
+}
 
 function ampaeJsonCount(file,id) {
   var items = 0;
@@ -66,12 +105,16 @@ function ampaeJsonCount(file,id) {
 /*
 
 */
+
 function ampaeDealMoreJson(file,callback,id,lim,off) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
   xobj.open('GET', file + "?limit=" + lim + "&offset=" + off, true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
+      if (off===0) {
+        document.getElementById(id).innerHTML="";
+      }
       document.getElementById('loader_image').style.display = "none";
       ampaeJsonMoreLoop(JSON.parse(xobj.responseText),callback,id,'afterbegin');
     }

@@ -1,3 +1,9 @@
+. finalize load css
+. ??? load js !!! head, foot
+. timer, click to load, count, reuse json load !!!
+. html loading delay !!!
+
+
 ???
 header data
 footer data

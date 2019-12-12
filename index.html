@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Server Side</title>
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+
+    <script type='text/javascript' src="scripts/load-css.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/load-feed-lib.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/load-css-rt.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/asideLeft.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/headerUser.js?v=3.1"></script>
+
+<script>
+// get interval cookie, if not set cookie for 5 sec, set intervl 5 sec as well..
+var ampaeChkMsgInt = 5000;
+var ampaeChkMsgVar = setInterval(ampaeChkMsgFn, ampaeChkMsgInt);
+function ampaeChkMsgFn() {
+// 1. check if it hasn't been checked, increase interval !!!
+//alert ('kkk');
+}
+
+
+</script>
+
+
+</head>
+<body>
+  <script>
+
+  </script>
+    <header id="header" class="header site-header" role="banner" aria-label="header banner">
+        <section id="topnav" class="topnav navBarSmall">
+
+            <div id="branding" class="branding">
+                <a href="index.html">
+                    <img id="headerLogoImg" src="img/logo-white.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="LOGO" />
+                </a>
+            </div>
+
+            <div class="headerMobMenu">
+                <label for="chkMenu" id="chkMenuLabel" class="mobmenu-toggle">&#9776;</label>
+                <input type="checkbox" id="chkMenu" onclick="showHideAsideLeft(this)" />
+            </div>
+
+            <div class="filler"></div>
+
+            <section id="headerSearch" class="headerSearch" role="search" aria-label="header search">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </section>
+
+            <div id="walls" class="walls dropdown">
+            </div>
+
+            <div id="notifications" class="notifications dropdown">
+            </div>
+
+            <div id="topuser" class="topuser dropdown">
+            </div>
+
+        </section>
+        <!-- .topnav -->
+
+    </header>
+
+    <main id="main" class="content" role="main" aria-label="main">
+        <div class="container">
+
+
+            <div id="loader_image" class="cnt"><img src="img/loader.gif" alt="" width="24" height="24"> Loading...please wait</div>
+            <div id="results" data-results="12345"></div>
+            <div id="loader_message"></div>
+            <!-- Load More Btn -->
+
+        </div>
+    </main>
+
+    <aside id="asideLeft" class="asideLeft" role="complementary" aria-label="aside left">
+        <nav role="navigation"  class="nano" aria-label="aside left navigation">
+          <ul id="leftside-navigation">
+          </ul>
+        </nav>
+    </aside>
+
+    <aside id="asideRight" class="asideRight" role="complementary" aria-label="aside right">
+    </aside>
+
+    <dialog id="qt_popup" class="qt_popup">
+      <div class="qt_popup_header">
+        <span id="qt_popup_close" class="qt-popup-close-button">X</span>
+      </div>
+      <div class="qt_popup_body"><div class="qt_popup_content"></div>
+      </div>
+      <div class="qt_popup_footer"></div>
+    </dialog>
+
+    <script type='text/javascript' src="scripts/sync/feed-right.js?v=3.2"></script>
+    <script type='text/javascript' src="scripts/sync/feed-left.js?v=3.2"></script>
+
+    <script type='text/javascript' src="scripts/sync/feed-main.js?v=3.2"></script>
+
+    <script type='text/javascript' src="scripts/sync/feed-wall.js?v=3.2"></script>
+
+
+    <script type='text/javascript' src="scripts/sync/feed-restop.js?v=3.2"></script>
+    <script type='text/javascript' src="scripts/sync/feed-restop-note.js?v=3.2"></script>
+
+<!--
+<script type='text/javascript' src="scripts/sync/feed-main.js?v=3.2"></script>
+-->
+
+
+    <script type='text/javascript' src="libs/jquery.min.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/jquery.imgup.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/jquery.qtlightbox.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/left-nav-menu.jquery.js?v=3.1"></script>
+
+</body>
+</html>

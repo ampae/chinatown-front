@@ -122,6 +122,10 @@ section[role="search"] button {
 	width: 40px;
 }
 
+.walls {
+	width: 40px;
+}
+
 .icon-wrapper-white {
 	color: #fff;
 	position: relative;
@@ -145,8 +149,8 @@ section[role="search"] button {
 	font-size: 9px;
 	font-weight: bold;
 	top: 0;
-	left: 12px;
-	padding: 3px;
+	left: 13px;
+	padding: 2px 5px;
 }
 
 .dropbtn {
