@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JS Replace</title>
+
+<style>
+</style>
+
+<script>
+
+/**
+ * LIB - FW Core Reusable functions
+**/
+
+function ampaeGetFile(file,callback) {
+  var xobj = new XMLHttpRequest();
+  xobj.open('GET', file, true);
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(xobj.responseText);
+    }
+  };
+  //xobj.setRequestHeader('Access-Control-Allow-Headers', '*');
+  //xobj.setRequestHeader('Access-Control-Allow-Origin', '*');
+  xobj.send(null);
+ }
+
+function ampaeReplaceCurly(string, arr) {
+var regex = /{{(.*?)}}/g;
+return string.replace(regex, (m, c) => (arr)[c.trim().toLowerCase()]);
+}
+
+/**
+ * APP - Library
+**/
+
+function ampaeDoTmpl(file,ext,id,pos,arr) {
+  ampaeGetFile (file+'.'+ext,function(data) {
+      document.getElementById(id).insertAdjacentHTML(pos, ampaeReplaceCurly(data,arr));
+  });
+}
+
+
+/**
+ * APP - Runtime
+**/
+
+window.onload = function() {
+    var props1 = {
+        'name': 'John',
+        'adjective': 'simple',
+        'type': 'string'
+    }
+    ampaeDoTmpl('js-replace5-1','tmpl','container','beforeend',props1);
+    ampaeDoTmpl('js-replace4-2','tmpl','container','afterbegin',props1);
+
+}
+
+</script>
+
+</head>
+
+<body>
+    <main id="main" class="content" role="main" aria-label="main">
+        <div id="container" class="container">
+        </div>
+    </main>
+</body>
+</html>
