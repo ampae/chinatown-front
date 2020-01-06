@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>ChinaTown Front - DashBoard TMPL</title>
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/style.css?v=3.1">
+    <link rel="stylesheet" href="styles/dashboard/style.css?v=3.1">
+
+    <script type='text/javascript' src="scripts/asideLeft.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/headerUser.js?v=3.1"></script>
+
+    <script type='text/javascript' src="libs/jquery.min.js?v=3.1"></script>
+
+
+</head>
+<body>
+    <header id="header" class="header site-header" role="banner" aria-label="header banner">
+        <section id="topnav" class="topnav navBarSmall">
+
+            <div id="branding" class="branding">
+                <a href="index.html">
+                    <img id="headerLogoImg" src="img/logo-white.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="LOGO" />
+                </a>
+            </div>
+
+            <div class="headerMobMenu">
+                <label for="chkMenu" id="chkMenuLabel" class="mobmenu-toggle">&#9776;</label>
+                <input type="checkbox" id="chkMenu" onclick="showHideAsideLeft(this)" />
+            </div>
+
+            <div class="filler"></div>
+
+            <section id="headerSearch" class="headerSearch" role="search" aria-label="header search">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </section>
+
+            <div id="notifications" class="notifications dropdown">
+            </div>
+
+            <div id="topuser" class="topuser dropdown">
+            </div>
+
+        </section>
+        <!-- .topnav -->
+
+    </header>
+
+    <main id="main" class="content" role="main" aria-label="main">
+        <div class="container">
+
+<div id="usr_chart"></div>
+
+        </div>
+    </main>
+
+    <aside id="asideLeft" class="asideLeft" role="complementary" aria-label="aside left">
+        <nav role="navigation" id="leftside-navigation" class="nano" aria-label="aside left navigation">
+        </nav>
+    </aside>
+
+    <aside id="asideRight" class="asideRight" role="complementary" aria-label="aside right">
+    </aside>
+
+    <dialog id="qt_popup" class="qt_popup">
+      <div class="qt_popup_header">
+        <span id="qt_popup_close" class="qt-popup-close-button">X</span>
+      </div>
+      <div class="qt_popup_body"><div class="qt_popup_content"></div>
+      </div>
+      <div class="qt_popup_footer"></div>
+    </dialog>
+
+    <script type='text/javascript' src="libs/jquery.form.min.js?v=3.1"></script>
+    <script type='text/javascript' src="libs/jquery.flot.min.js"></script>
+    <script type='text/javascript' src="scripts/left-nav-menu.jquery.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.restop.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.restop-note.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.resleft.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.resright.js?v=3.1"></script>
+
+    <script type='text/javascript' src="scripts/sync/jquery.ampae.chart.js?v=3.1"></script>
+
+
+</body>
+</html>

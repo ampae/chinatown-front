@@ -1,4 +1,4 @@
-ampaeDealJson('feeds/feed-left.json', ampaeQtLeftItem, 'leftside-navigation'); // feed, callback, id, position
+// ampaeDealJson('feeds/feed-left.json', ampaeQtLeftItem, 'leftside-navigation'); // feed, callback, id, position
 function ampaeQtLeftItem(val) {
   var r = '';
   if (val.link!==undefined) {

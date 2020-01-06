@@ -38,6 +38,24 @@ so if the string "in" is found inside of document.readyState,
 then we know we are not ready yet.
 */
 
+function ampaeGetFile(file,callback) {
+  var xobj = new XMLHttpRequest();
+  xobj.open('GET', file, true);
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(xobj.responseText);
+    }
+  };
+  //xobj.setRequestHeader('Access-Control-Allow-Headers', '*');
+  //xobj.setRequestHeader('Access-Control-Allow-Origin', '*');
+  xobj.send(null);
+ }
+
+function ampaeReplaceCurly(string, arr) {
+var regex = /{{(.*?)}}/g;
+return string.replace(regex, (m, c) => (arr)[c.trim().toLowerCase()]);
+}
+
 function ampaeGetJson(file,callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
@@ -54,6 +72,20 @@ function ampaeGetJson(file,callback) {
   // xobj.setRequestHeader("Authorization", "Basic <API KEY>");
   xobj.send(null);
  }
+
+ /**
+  * APP - Library
+ **/
+
+ function ampaeDoTmpl(file,ext,id,pos,arr) {
+   ampaeGetFile (file+'.'+ext,function(data) {
+       document.getElementById(id).insertAdjacentHTML(pos, ampaeReplaceCurly(data,arr));
+   });
+ }
+
+ /**
+  * 
+ **/
 
 function ampaeDealJson(file,callback,id,pos='afterbegin') {
   ampaeGetJson (file,function(data) {
