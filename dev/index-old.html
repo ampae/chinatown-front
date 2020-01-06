@@ -8,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 
-    <link rel="stylesheet" href="styles/style.css?v=3.1">
-    <link rel="stylesheet" href="styles/index/style.css?v=3.1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index/style.css">
 <!--
     <meta name="theme-color" content="black">
     <meta name="msapplication-navbutton-color" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 -->
-    <script type='text/javascript' src="scripts/onscroll.js?v=3.1"></script>
-    <script type='text/javascript' src="scripts/headerUser.js?v=3.1"></script>
+    <script type='text/javascript' src="scripts/onscroll.js"></script>
+    <script type='text/javascript' src="scripts/headerUser.js"></script>
 
 <script>
 
@@ -45,12 +45,7 @@ document.getElementById('themeSwitch').addEventListener('change', function(event
 </script>
 
     <script type='text/javascript' src="libs/jquery.min.js"></script>
-    <script type='text/javascript' src="scripts/sync/jquery.ampae.restop.js?v=3.1"></script>
-    <script type='text/javascript' src="scripts/sync/jquery.ampae.restop-note.js?v=3.1"></script>
-    <script type='text/javascript' src="scripts/sync/jquery.ampae.reshead-over.js?v=3.1"></script>
-    <script type='text/javascript' src="scripts/sync/jquery.ampae.reshead-cta.js?v=3.1"></script>
-    <script type='text/javascript' src="scripts/sync/jquery.ampae.resleft.js?v=3.1"></script>
-    <script type='text/javascript' src="scripts/sync/jquery.ampae.resright.js?v=3.1"></script>
+
 </head>
 
 <body>
@@ -229,18 +224,20 @@ document.getElementById('themeSwitch').addEventListener('change', function(event
     <!-- #colophon -->
 
     <dialog id="qt_popup" class="qt_popup">
-      <div class="qt_popup_header">
+      <div id="qt_popup_header" class="qt_popup_header">
         <span id="qt_popup_close" class="qt-popup-close-button">X</span>
       </div>
-      <div class="qt_popup_body"><div class="qt_popup_content"></div>
+      <div class="qt_popup_body"><div id="qt_popup_content" class="qt_popup_content"></div>
       </div>
-      <div class="qt_popup_footer"></div>
+      <div id="qt_popup_footer" class="qt_popup_footer"></div>
     </dialog>
-
+<!--
     <script type='text/javascript' src="libs/jquery.mb.YTPlayer.min.js?v=3.1"></script>
     <script type='text/javascript' src="scripts/jquery.mb-player.js?v=3.1"></script>
 
     <script type='text/javascript' src="scripts/jquery.qtlightbox.js?v=3.1"></script>
+-->
+    <script type='text/javascript' src="scripts/qtlightbox.js"></script>
 
 </body>
 </html>

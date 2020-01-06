@@ -29,7 +29,6 @@ dialog {
 	top: 0;
 	height: 100%;
 	margin-top: 0;
-	opacity: 0;
 	width: 100%;
 	z-index: 999999
 }
@@ -146,4 +145,19 @@ dialog {
 }
 .qt_popup_content_right {
 	background-color: #fff;
+}
+
+.qtShow {
+  opacity: 0.9;
+	-webkit-transition: opacity 5s;
+	-moz-transition: opacity 5s;
+	-o-transition: opacity 5s;
+	transition: opacity 5s;
+}
+.qtHide {
+  opacity: 0.0;
+	-webkit-transition: opacity 5s;
+	-moz-transition: opacity 5s;
+	-o-transition: opacity 5s;
+	transition: opacity 5s;
 }

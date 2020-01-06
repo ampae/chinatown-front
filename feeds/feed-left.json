@@ -10,8 +10,23 @@
      "value":"My Account",
       "icon":"fa-user-circle",
       "active":0,
-      "upper":0,
-     "link":"dashboard.html"
+      "upper":1,
+     "sub": [
+       {
+       "value":"Dashboard",
+       "icon":"fa-sign-in-alt",
+       "active":0,
+       "upper":0,
+       "link":"dashboard.html"
+       },
+       {
+       "value":"Yyyyy",
+       "icon":"fa-sign-in-alt",
+       "active":0,
+       "upper":0,
+       "link":"yyyy.html"
+       }
+   ]
    },
    {
      "value":"Wall",

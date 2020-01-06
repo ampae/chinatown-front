@@ -28,6 +28,7 @@ function ampaeItemMain(val) {
 		s += '<div class="panel-thumbnail">';
 		s += '<span class="qt-lightbox" data-source="' + val.value_3 + '" title="Image Title" desc="Image Description">';
 		s += '<a href="' + val.value_3 + '">';
+		//s += '<a href="#">';
 		s += '<img width="250" height="250" src="' + val.value_3 + '" class="" alt="" />';
 		s += '</a>';
 		s += '</span>';

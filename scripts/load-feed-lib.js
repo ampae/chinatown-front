@@ -21,16 +21,17 @@
 **/
 
 function ampaeDocumentReady(callback){
-  if (/loaded|complete/i.test(document.readyState)) {
+  if (/complete/i.test(document.readyState)) {
     callback();
   } else {
-    setTimeout(ampaeDocumentReady,5,callback);
+    setTimeout(ampaeDocumentReady,50,callback);
   }
 }
 //ampaeDocumentReady(function(){});
 /*
+if (/loaded|complete/i.test(document.readyState)) {
 if( !/in/.test(document.readyState) ) {
-rowser has 3 loading states: "loading", "interactive", and "complete"
+Browser has 3 loading states: "loading", "interactive", and "complete"
 (older WebKit also used "loaded", but you don't have to worry about that any more).
 You will notice that both "loading" and "interactive" contain the text "in"...
 so if the string "in" is found inside of document.readyState,
@@ -46,6 +47,11 @@ function ampaeGetJson(file,callback) {
       callback(JSON.parse(xobj.responseText));
     }
   };
+  xobj.setRequestHeader('Accept', 'application/json');
+  // xobj.setRequestHeader('Content-Type', 'application/json');
+  xobj.setRequestHeader('Access-Control-Allow-Headers', '*');
+  xobj.setRequestHeader('Access-Control-Allow-Origin', '*');
+  // xobj.setRequestHeader("Authorization", "Basic <API KEY>");
   xobj.send(null);
  }
 
