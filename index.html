@@ -1,243 +1,31 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ChinaTown Front - Index TMPL</title>
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/index/style.css">
-<!--
-    <meta name="theme-color" content="black">
-    <meta name="msapplication-navbutton-color" content="black">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
--->
+    <script type='text/javascript' src="scripts/load-feed-lib.js"></script>
+    <script type='text/javascript' src="scripts/asideLeft.js"></script>
     <script type='text/javascript' src="scripts/onscroll.js"></script>
     <script type='text/javascript' src="scripts/headerUser.js"></script>
-
-<script>
-
-document.documentElement.classList.add('day');
-function handleClick(e) {
-    if (e.value === 'day'){
-        document.documentElement.classList.add('day');
-        document.documentElement.classList.remove('night');
-    }else{
-        document.documentElement.classList.add('night');
-        document.documentElement.classList.remove('day');
-    }
-}
-/*
-document.getElementById('themeSwitch').addEventListener('change', function(event){
-  if (event.target.checked) {
-  document.documentElement.classList.add('day');
-  document.documentElement.classList.remove('night');
-} else {
-    document.documentElement.classList.add('night');
-    document.documentElement.classList.remove('day');
-  }
-});
-*/
-</script>
-
     <script type='text/javascript' src="libs/jquery.min.js"></script>
-
+    <script type='text/javascript' src="scripts/left-nav-menu.jquery.js"></script>
+    <script type='text/javascript' src="scripts/index.js"></script>
 </head>
-
-<body>
-    <header id="header" class="banner" role="banner" aria-label="header banner">
-
-        <section id="topnav" class="topnav">
-
-            <div id="branding" class="branding">
-                <a href="#">
-                    <img id="headerLogoImg" src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="LOGO" />
-                </a>
-            </div>
-
-<!--
-<div class="headerMobMenu">
-    <label for="chkMenu" id="chkMenuLabel" class="mobmenu-toggle">&#9776;</label>
-    <input type="checkbox" id="chkMenu" onclick="showHideAsideLeft(this)" />
-</div>
-
-<section id="headerSearch" class="headerSearch" role="search" aria-label="header search">
-    <input type="text" placeholder="Search..">
-    <button type="submit"><i class="fa fa-search"></i></button>
-</section>
--->
-
-            <div class="filler"></div>
-
-            <div id="notifications" class="notifications dropdown">
-            </div>
-
-            <div id="topuser" class="topuser dropdown">
-            </div>
-
-<!--
-            &#9680;
-            <label>Light<input type="radio" name="theme" value="day" checked onclick="handleClick(this)"/></label>
-            <label>Dark<input type="radio" name="theme" value="night" onclick="handleClick(this)"/></label>
--->
-
-<!--
-<div class="switch">
-  <input class="switch__input" type="checkbox" id="themeSwitch">
-  <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
-  <div aria-hidden="true" class="switch__marker"></div>
-</div>
--->
-        </section>
-        <!-- .topnav -->
-
-        <section id="cozy" class="cozy">
-
-            <section id="bill" class="bill">
-                <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=LqXWIG93hoM',containment:'self',autoPlay:true, loop:1, mute:true, rel:0, startAt:0, opacity:1, mute: true, showControls:false}">
-                    <div id="bannerOverlay" class="overlay">
-                    </div>
-                </div>
-            </section>
-
-            <section id="cta-home" class="cta-home">
-            </section>
-
-        </section>
-
-    </header>
-
-    <main id="main" class="main content" role="main" aria-label="main">
-        <div class="container">
-
-          <article id="post-66" class="hentry">
-
-              <figure>
-                  <div class="panel-thumbnail">
-                    <span class="qt-lightbox" data-source="https://placeimg.com/640/480/any" title="Image Title" desc="Image Description">
-                      <a href="https://placeimg.com/640/480/any">
-                        <img width="250" height="250" src="https://placeimg.com/640/480/any" class="" alt="Hello World" />
-                      </a>
-                    </span>
-                  </div>
-              </figure>
-
-              <header class="entry-header">
-
-                  <section class="author">
-                      <a class="author vcard" href="#"><img alt='' src='https://placeimg.com/640/480/any' class='avatar avatar-50 photo' height='50' width='50' /> &bull; avatar</a>
-                  </section>
-
-                  <section class="time-loc">
-                      <time class="updated" datetime="2019-05-18">May 18, 2019</time>
-                  </section>
-
-              </header>
-              <!-- .entry-header -->
-
-              <section class="entry-content">
-                  <h2 class="entry-title"><a href="#" rel="bookmark">Lorem ipsum dolor sit amet.</a></h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <br />
-              </section>
-              <!-- .entry-content -->
-
-              <footer class="entry-footer">
-                  <div class="pull-right">
-                      <a class="btn btn-small btn-orange-inverse" href="#">read | comment</a>
-                  </div>
-                  <p class="">
-                      <a href="#">comments</a>
-                  </p>
-                  <a href="#" rel="category tag">HTML</a>
-                  <br /> # <a href="#" rel="tag">css</a>
-              </footer>
-              <!-- .entry-footer -->
-          </article>
-          <!-- #post-## -->
-
-          <article id="post-67" class="hentry">
-
-              <figure>
-                  <div class="panel-thumbnail">
-                    <span class="qt-lightbox" data-source="https://placeimg.com/640/480/any" title="Image Title" desc="Image Description">
-                      <a href="https://placeimg.com/640/480/any">
-                        <img width="250" height="250" src="https://placeimg.com/640/480/any" class="" alt="Hello World" />
-                      </a>
-                    </span>                    </div>
-              </figure>
-
-              <header class="entry-header">
-
-                  <section class="author">
-                      <a class="author vcard" href="#"><img alt='' src='https://placeimg.com/640/480/any' class='avatar avatar-50 photo' height='50' width='50' /> &bull; avatar</a>
-                  </section>
-
-                  <section class="time-loc">
-                      <time class="updated" datetime="2019-05-18">May 18, 2019</time>
-                  </section>
-
-              </header>
-              <!-- .entry-header -->
-
-              <section class="entry-content">
-                  <h2 class="entry-title"><a href="#" rel="bookmark">Hello World</a></h2>
-                  <p>Hello World</p>
-                  <br />
-              </section>
-              <!-- .entry-content -->
-
-              <footer class="entry-footer">
-                  <div class="pull-right">
-                      <a class="btn btn-small btn-orange-inverse" href="#">read | comment</a>
-                  </div>
-                  <p class="">
-                      <a href="#">comments</a>
-                  </p>
-                  <a href="#" rel="category tag">HTML</a>
-                  <br /> # <a href="#" rel="tag">css</a>
-              </footer>
-              <!-- .entry-footer -->
-          </article>
-          <!-- #post-## -->
-
-        </div>
-    </main>
-
-    <aside id="asideLeft" class="asideLeft" role="complementary" aria-label="aside left">
-        <nav role="navigation" id="leftside-navigation" class="nano" aria-label="aside left navigation">
-        </nav>
-    </aside>
-
-    <aside id="asideRight" class="asideRight" role="complementary" aria-label="aside right">
-    </aside>
-
-    <footer id="colophon" class="asideFooter" role="contentinfo">
-        <div class="site-info">
-        </div>
-        <!-- site-info -->
-    </footer>
-    <!-- #colophon -->
-
-    <dialog id="qt_popup" class="qt_popup">
-      <div id="qt_popup_header" class="qt_popup_header">
-        <span id="qt_popup_close" class="qt-popup-close-button">X</span>
-      </div>
-      <div class="qt_popup_body"><div id="qt_popup_content" class="qt_popup_content"></div>
-      </div>
-      <div id="qt_popup_footer" class="qt_popup_footer"></div>
-    </dialog>
+<body id="body" class="body">
+  <script type='text/javascript' src="scripts/sync/feed-right.js"></script>
+  <script type='text/javascript' src="scripts/sync/feed-left.js"></script>
 <!--
     <script type='text/javascript' src="libs/jquery.mb.YTPlayer.min.js?v=3.1"></script>
     <script type='text/javascript' src="scripts/jquery.mb-player.js?v=3.1"></script>
-
+-->    
+<!--
     <script type='text/javascript' src="scripts/jquery.qtlightbox.js?v=3.1"></script>
--->
     <script type='text/javascript' src="scripts/qtlightbox.js"></script>
-
+-->
 </body>
 </html>

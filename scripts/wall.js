@@ -10,7 +10,7 @@ window.onload = function() {
       'loaderfile': 'img/loader.gif',
       'loadertitle': 'Loading...please wait',
   }
-  ampaeDoTmpl('tmpl/main', 'tmpl', 'body', 'afterend', propsMain);
+  ampaeDoTmpl('tmpl/main-wall', 'tmpl', 'body', 'afterend', propsMain);
   //ampaeDoTmpl('tmpl/main', 'tmpl', 'header', 'afterend', propsMain);
 
     var propsLeftMenu = {
