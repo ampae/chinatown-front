@@ -4,58 +4,28 @@ window.onload = function() {
       'loaderfile': 'img/loader.gif',
       'loadertitle': 'Loading...please wait',
   }
-  ampaeDoTmpl('tmpl/header-index', 'tmpl', 'body', 'afterend', null);
+  ampaeDoTmpl('tmpl/header-index', 'tmpl', 'header', 'afterbegin', null);
 
   var propsMain = {
       'loaderfile': 'img/loader.gif',
       'loadertitle': 'Loading...please wait'
   }
-  ampaeDoTmpl('tmpl/main-index', 'tmpl', 'body', 'afterbegin', null);
+  ampaeDoTmpl('tmpl/main-index', 'tmpl', 'main', 'afterbegin', null);
 
   var propsLeftMenu = {
       'leftmenu': 'John'
   }
-  ampaeDoTmpl('tmpl/aside-left', 'tmpl', 'main', 'afterend', propsLeftMenu);
+  ampaeDoTmpl('tmpl/aside-left', 'tmpl', 'asideLeft', 'afterbegin', propsLeftMenu);
   ampaeDealJson('feeds/feed-left.json', ampaeQtLeftItem, 'leftside-navigation'); // feed, callback, id, position
 
   var propsRight = {
       'leftmenu': 'John'
   }
-  ampaeDoTmpl('tmpl/aside-right', 'tmpl', 'main', 'afterend', null);
+  ampaeDoTmpl('tmpl/aside-right', 'tmpl', 'asideRight', 'afterbegin', null);
   ampaeDealJson('feeds/feed-right.json', ampaeQtRightItem, 'asideRight'); // feed, callback, id, position
 
-/*
 
-var propsHeader = {
-    'loaderfile': 'img/loader.gif',
-    'loadertitle': 'Loading...please wait',
-}
-ampaeDoTmpl('tmpl/header-index', 'tmpl', 'body', 'afterend', null);
-
-  var propsMain = {
-      'loaderfile': 'img/loader.gif',
-      'loadertitle': 'Loading...please wait',
-  }
-  ampaeDoTmpl('tmpl/main', 'tmpl', 'body', 'afterend', propsMain);
-  //ampaeDoTmpl('tmpl/main', 'tmpl', 'header', 'afterend', propsMain);
-
-    var propsLeftMenu = {
-        'leftmenu': 'John'
-    }
-    ampaeDoTmpl('tmpl/aside-left', 'tmpl', 'main', 'afterend', propsLeftMenu);
-    ampaeDealJson('feeds/feed-left.json', ampaeQtLeftItem, 'leftside-navigation'); // feed, callback, id, position
-
-    var propsRight = {
-        'leftmenu': 'John'
-    }
-    ampaeDoTmpl('tmpl/aside-right', 'tmpl', 'main', 'afterend', null);
-    ampaeDealJson('feeds/feed-right.json', ampaeQtRightItem, 'asideRight'); // feed, callback, id, position
-*/
-
-    //ampaeDoTmpl('tmpl/dialog', 'tmpl', 'main', 'afterend', null);
-    //ampaeDoTmpl('tmpl/footer', 'tmpl', 'main', 'afterend', null);
-
-
-
-
+  ctLoadCssFile('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+  ctLoadCssFile('styles/style.css');
+  ctLoadCssFile('styles/index/style.css');
 }

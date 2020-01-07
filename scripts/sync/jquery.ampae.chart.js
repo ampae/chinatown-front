@@ -1,4 +1,4 @@
-jQuery(function ($) {
+jQuery(document).ready(function($) {
 $.ajax({
   type: "GET",
   async: true,

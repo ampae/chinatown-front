@@ -10,8 +10,7 @@ window.onload = function() {
       'loaderfile': 'img/loader.gif',
       'loadertitle': 'Loading...please wait',
   }
-  ampaeDoTmpl('tmpl/main-wall', 'tmpl', 'main', 'afterbegin', propsMain);
-  //ampaeDoTmpl('tmpl/main', 'tmpl', 'header', 'afterend', propsMain);
+  ampaeDoTmpl('tmpl/main-dash', 'tmpl', 'main', 'afterbegin', propsMain);
 
     var propsLeftMenu = {
         'leftmenu': 'John'

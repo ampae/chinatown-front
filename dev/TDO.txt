@@ -1,6 +1,6 @@
 !!!
 <main id="main" class="main content" role="main" aria-label="main">
-<main id="main" class="content" role="main" aria-label="main">
+<main id="main" class="main content" role="main" aria-label="main">
 !!!
 when disconnect on index right top menu fail !!!
 !!!
