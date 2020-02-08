@@ -84,7 +84,7 @@ function ampaeGetJson(file,callback) {
  }
 
  /**
-  * 
+  *
  **/
 
 function ampaeDealJson(file,callback,id,pos='afterbegin') {
