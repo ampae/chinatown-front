@@ -3,16 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Index</title>
+    <title>Wall</title>
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/index/style.css">
-
-    <script type='text/javascript' src="scripts/onscroll.js"></script>
-    <script type='text/javascript' src="scripts/headerUser.js"></script>
+    <link rel="stylesheet" href="styles/wall/style.css">
 
     <script type='text/javascript' src="scripts/asideLeft.js"></script>
 
@@ -21,10 +18,12 @@
 <body>
     <header id="header" class="header site-header" role="banner" aria-label="header banner">
 
-      <section id="topnav" class="topnav">
+
+      <section id="topnav" class="topnav navBarSmall">
+
           <div id="branding" class="branding">
-              <a href="#">
-                  <img id="headerLogoImg" src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="LOGO" />
+              <a href="index.html">
+                  <img id="headerLogoImg" src="img/logo-white.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="LOGO" />
               </a>
           </div>
 
@@ -33,8 +32,12 @@
               <input type="checkbox" id="chkMenu" onclick="showHideAsideLeft(this)" />
           </div>
 
-
           <div class="filler"></div>
+
+          <section id="headerSearch" class="headerSearch" role="search" aria-label="header search">
+              <input type="text" placeholder="Search..">
+              <button type="submit"><i class="fa fa-search"></i></button>
+          </section>
 
           <div id="notifications" class="notifications dropdown">
           </div>
@@ -43,10 +46,7 @@
           </div>
 
       </section>
-      <!-- .site-branding -->
-
-      <section id="cozy" class="cozy">
-      </section>
+      <!-- .topnav -->
 
 
     </header>

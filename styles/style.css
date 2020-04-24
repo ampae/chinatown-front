@@ -20,13 +20,45 @@
  * </codeheader>
 */
 @import 'reset.css';
+/*
 @import 'runtime.css';
+*/
 @import 'helpers.css';
 @import 'alerts.css';
 @import 'typo.css';
 @import 'buttons.css';
 @import 'forms.css';
-@import 'aside-nav.css';
 
 @import 'article.css';
+
+.dialog {
+  display: none;
+}
+.footer {
+  display: none;
+}
+
+body {
+  background: rgba(250, 250, 250, .7) url('../img/page.png') repeat top left fixed;
+}
+header {
+  background: rgba(22, 22, 22, .9);
+}
+main {
+  background: rgba(250, 250, 250, .7) url('../img/page.png') repeat top left fixed;
+  padding: 10px;
+}
+
+
+.asideLeft {
+  padding: 10px;
+}
+/*
+.asideRight {
+}
+*/
+
+/*
+@import 'aside-nav.css';
 @import 'lightbox.css';
+*/
